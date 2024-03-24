@@ -12,6 +12,35 @@ header{
     z-index: 3;
 }
 
+p::selection{
+    background-color: rgb(172, 159, 57);
+    color: white;
+}
+h1::selection{
+    background-color: rgb(172, 159, 57);
+    color: white;
+}
+h2::selection{
+    background-color: rgb(172, 159, 57);
+    color: white;
+}
+h3::selection{
+    background-color: rgb(172, 159, 57);
+    color: white;
+}
+.tituloColor::selection{
+    background-color: rgb(172, 159, 57);
+    color: white;
+}
+.argentinoRefran::selection{
+    background-color: rgb(172, 159, 57);
+    color: white;
+}
+a::selection{
+    background-color: rgb(172, 159, 57);
+    color: white;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -492,6 +521,7 @@ footer ul{
     font-style: normal;
 }
 
+
 .clasRiv img{
     box-shadow: 4px 4px 5px #00F4FF;
     margin-bottom: 1.875rem;
@@ -575,6 +605,27 @@ footer ul{
 
 /*CSS página Contacto*/
 
+
+
+input::placeholder{
+    color: white;
+}
+
+input:focus{
+    outline: none;
+    color: white;
+    background-color: rgb(172, 159, 57);
+}
+
+input:hover{
+    background-color: rgb(172, 159, 57);
+}
+
+.bot:hover{
+    background-color:  rgb(172, 159, 57);
+    color: white;
+}
+
 .contact{
     color: white;
     font-family: "Poppins", sans-serif;
@@ -592,7 +643,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    /* color: white; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -605,32 +656,33 @@ form{
 }
 
 .bot{
+    border: none;
     width: 5.625rem;
     padding: .5rem;
     margin: .9375rem 0;
 }
 
 .nomb{
+    background: none;
     width: 28.125rem;
     padding: .3125rem;
     border-width: .1875rem;
-    border-color:rgb(172, 159, 57);
-    border-style: outset;
+    border: 2px solid rgb(172, 159, 57);
 }
 
 .e-mail{
+    background: none;
     padding: .3125rem;
     border-width: .1875rem;
-    border-color: rgb(172, 159, 57);
-    border-style: solid;
+    border: 2px solid rgb(172, 159, 57);
     width: 28.125rem;
 }
 
 .message{
+    background: none;
     padding: .3125rem;
     border-width: .1875rem;
-    border-color: rgb(172, 159, 57);
-    border-style: inset;
+    border: 2px solid rgb(172, 159, 57);
     width: 28.125rem;
     height: 12.5rem;
 }
