@@ -192,7 +192,7 @@ footer ul{
     height: 8.125rem;
     line-height: 1.2em;
     padding-top: .6875rem;
-    
+
 }
 .tituloColor{
     color: #00F4FF;
@@ -258,7 +258,7 @@ footer ul{
     font-style: normal;
     text-transform: uppercase;
     text-align: center;
-    padding-top: .9375rem;
+    padding-top: 15px;
     font-size: 25px;
 }
 .diStefano h3{
@@ -271,7 +271,6 @@ footer ul{
     padding-top: .9375rem;
     font-size: 25px;
 }
-
 .diStefano img{
     border: 2px solid white;
 }
@@ -306,7 +305,7 @@ footer ul{
     font-weight: 500;
     font-style: normal;
     font-size: 36px;
-    margin-top: -4.0625rem;
+    margin-top: -3.75rem;
     padding-left: 10rem;
     order: 2;
 }
@@ -348,6 +347,7 @@ footer ul{
 
 .munNum{
     text-align: center;
+    font-size: 24px;
     margin-left: -6.875rem;
     margin-top: 7.5rem;
     margin-right: 6.25rem;
@@ -362,6 +362,7 @@ footer ul{
 
 .numCa{
     text-align: center;
+    font-size: 24px;
     margin-left: 5.625rem;
     margin-top: 10.3125rem;
     margin-right: -7.1875rem;
@@ -377,6 +378,7 @@ footer ul{
 
 .numFin{
     text-align: center;
+    font-size: 24px;
     margin-left: -5.9375rem;
     margin-top: 7.5rem;
     margin-right: 5.3125rem;
@@ -390,6 +392,7 @@ footer ul{
 }
 
 .numConf{
+    font-size: 24px;
     text-align: center;
     margin-left: 7.1875rem;
     margin-top: 8.4375rem;
@@ -405,6 +408,7 @@ footer ul{
 }
 
 .numPan{
+    font-size: 24px;
     text-align: center;
     margin-left: -6.5625rem;
     margin-top: 7.8125rem;
@@ -458,6 +462,7 @@ footer ul{
     width: 100%;
     height: 15.625rem;
 }
+
 .palmaresDerecha p{
     width: 34.375rem;
     height: 11.875rem;
@@ -528,50 +533,52 @@ footer ul{
 }
 
 .pargBr{
-    width: 46.875rem;
-    height: 12.5rem;
+    width: 49.6875rem;
+    height: 16.25rem;
     background-color: #1A1A1A;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 1.25rem;
     padding: 1.25rem 1.25rem;
     box-shadow: 2px 2px 2px white;
 }
 
 .pargUru{
-    width: 48.125rem;
-    height: 15.625rem;
+    width: 49.6875rem;
+    height: 20.9375rem;
     background-color: #1A1A1A;
-    font-size: 16px;
-    margin-bottom: 1.25rem;
+    font-size: 20px;
+    margin-bottom: 2.5rem;
     padding: 1.5625rem 1.5625rem;
+    padding-top: 20px;
     box-shadow: 2px 2px 2px white;
 }
 
 .pargIng{
-    width: 48.125rem;
-    height: 15.625rem;
+    width: 49.6875rem;
+    height: 20.9375rem;
     background-color: #1A1A1A;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 1.25rem;
     padding: 1.5625rem 1.875rem;
+    padding-top: 20px;
     box-shadow: 2px 2px 2px white;
 }
 
 .pargAl{
-    width: 48.125rem;
-    height: 11.5625rem;
+    width: 49.375rem;
+    height: 15.1875rem;
     background-color: #1A1A1A;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 1.25rem;
     padding: 1.5625rem 1.5625rem;
     box-shadow: 2px 2px 2px white;
 }
 
 .pargHol{
-    width: 48.125rem;
-    height: 14.0625rem;
+    width: 49.375rem;
+    height: 18.4375rem;
     background-color: #1A1A1A;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 1.25rem;
     padding: 1.5625rem 1.875rem;
     box-shadow: 2px 2px 2px white;
@@ -594,27 +601,47 @@ footer ul{
     font-size: 30px;
     text-align: center;
     background-color: #002021;
+    padding: 1.25rem;
     margin-top: .625rem;
     margin-bottom: 2.5rem;
 }
 
 .imgClas{
-    width: 60%;
+    width: 46.875rem;
+    height: 28.125rem;
+}
+
+.imgArgal{
+    width: 43.75rem;
     height: 28.125rem;
 }
 
 /*CSS página Contacto*/
 
 
+input:not(.bot){
+    color: white;
+}
 
 input::placeholder{
     color: white;
 }
 
 input:focus{
+    font-weight: bold;
     outline: none;
-    color: white;
+    color: black;
     background-color: rgb(172, 159, 57);
+}
+
+input:focus::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+input:hover::placeholder{
+    color: black;
+    font-weight: bold;
 }
 
 input:hover{
@@ -623,7 +650,7 @@ input:hover{
 
 .bot:hover{
     background-color:  rgb(172, 159, 57);
-    color: white;
+    color: black;
 }
 
 .contact{
@@ -632,64 +659,235 @@ input:hover{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    width: 45%;
+    width: 50%;
     height: 12.5rem;
-    padding-left: 3.125rem;
+    padding-left: 130px;
     margin-top: 4.375rem;
     margin-bottom: -2.5rem;
 }
 
-form{
-    display: flex;
+.form{
     flex-direction: column;
     justify-content: center;
-    /* color: white; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    color: white;
     text-transform: capitalize;
     width: 100%;
-    gap: .625rem;
-    padding-left: 43.75rem;
-    margin-top: -24.375rem;
+    gap: 1.25rem;
+    padding-left: 48.75rem;
+    padding-bottom: 3.125rem;
+    margin-top: -22.5rem;
 }
 
 .bot{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
     border: none;
-    width: 5.625rem;
-    padding: .5rem;
-    margin: .9375rem 0;
+    width: 21%;
+    padding: 8px;
 }
 
 .nomb{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background: none;
-    width: 28.125rem;
+    width: 79%;
     padding: .3125rem;
     border-width: .1875rem;
     border: 2px solid rgb(172, 159, 57);
+    margin-top: 1.25rem;
 }
 
 .e-mail{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background: none;
     padding: .3125rem;
     border-width: .1875rem;
     border: 2px solid rgb(172, 159, 57);
-    width: 28.125rem;
+    width: 79%;
+    margin-top: 1.25rem;
 }
 
 .message{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background: none;
     padding: .3125rem;
     border-width: .1875rem;
     border: 2px solid rgb(172, 159, 57);
-    width: 28.125rem;
+    width: 79%;
     height: 12.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
-
 
 .logoContact{
     width: auto;
     height: 25rem;
-    padding-left: 11.25rem;
+    padding-left: 14.6875rem;
+    padding-top: 50px;
+}
+
+@media (max-width: 1024px){
+
+    /*index*/
+    .footIndex{
+        margin-top: .9375rem;
+    }
+    .somosMontiel{
+        font-size: 28px;
+        padding: 0;
+        margin-right: -150px;
+    }
+    .messi img{
+        grid-column: 4/6;
+        grid-row: 3/9;
+        margin: 0 70px;
+        padding: 0;
+        width: 60%;
+        height: auto;
+    }
+    .maradona img{
+        margin: 20px 25px;
+        padding: 0 0;
+        width: 70%;
+        height: auto;
+    }
+    .maradona h3{
+        font-size: 24px;
+        margin-top: -10px;
+        padding: 0;
+    }
+    .diStefano h3{
+        font-size: 24px;
+        margin-top: -25px;
+        margin-left: 45px;
+        width: 80%;
+    }
+    .messi h3{
+        font-size: 24px;
+        margin-left: 70px;
+        width: 60%;
+        height: 15%;
+    }
+    .diStefano img{
+        margin: 20px 45px;
+        padding: 0 0;
+        width: 85%;
+        height: auto;
+    }
+    .indexLogo{
+        padding-top: 2.5rem;
+        padding-bottom: 4.375rem;
+    }
+
+    /* palmares */
+
+    .palmaresIzquierda{
+        height: 15.625rem;
+    }
+    .palmaresIzquierda p{
+        font-size: 1.25rem;
+        margin-top: -0.3125rem;
+        margin-right: .3125rem;
+        
+    }
+    .palmaresDerecha{
+        height: 15.625rem;
+    }
+    .palmaresDerecha p{
+        font-size: 1.25rem;
+        padding-top: 1.875rem;
+        margin-left: .3125rem;
+        height: 15.625rem;
+    }
+    .munNum,.numFin{
+        margin-top: 10.625rem;
+        margin-left: -7.1875rem;
+    }
+    .numCa{
+        margin-top: 10.9375rem;
+    }
+    .numConf{
+        margin-top: 8.75rem;
+        margin-right: -8.125rem;
+    }
+    .munNum,.numConf,.numFin,.numPan{
+        width: 3.125rem;
+        height: 3.125rem;
+        padding-top: .375rem;
+        box-shadow: 3px 3px 4px white;
+    }
+    .numPan{
+        margin-top: 11.25rem;
+        margin-left: -7.1875rem;
+    }
+
+    /* Clasicos */
+
+    .subClas{
+        line-height: 1.875rem;
+        margin-bottom: 1.5625rem;
+        width: 31.25rem;
+    }
+    .imgClas{
+        width: 50%;
+        height: 90%;
+    }
+    .imgArgal{
+        width: 50%;
+        height: 100%;
+    }
+    .clasRiv p{
+        font-size: 20px;
+        margin-bottom: 2.8125rem;
+    }
+    .pargBr{
+        width: 37.5rem;
+        height: 21.5625rem;
+    }
+    .pargUru{
+        width: 37.5rem;
+        height: 28.125rem;
+    }
+    .pargIng{
+        width: 37.5rem;
+        height: 28.125rem;
+    }
+    .pargAl{
+        width: 37.5rem;
+        height: 20.3125rem;
+    }
+    .pargHol{
+        width: 37.5rem;
+        height: 23.4375rem;
+    }
+    .bot{
+        width: 30%;
+        margin-top: 10px;
+    }
+    .form{
+        width: 100%;
+        padding: 0 320px 0 320px;
+        padding-top: 300px;
+        margin-bottom: 200px;
+    }
+    .contact{
+        margin-top: 5rem;
+        margin-bottom: 3.125rem;
+        padding: 0 180px 0 180px;
+        width: 100%;
+    }
+    .logoContact{
+        display: none;
+    }
 }
