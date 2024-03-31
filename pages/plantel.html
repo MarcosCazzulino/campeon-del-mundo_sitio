@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -26,31 +27,420 @@
     </header>
 
     <main>
-        <section>   <!--En esta página voy a implementar carruseles, aún no puse las fotos porque quedarían un montón de fotos desordenadas, ya que no aprendí aún a hacer, carruseles y se puede hacer tedioso para trabajar y para corregir--> 
+        <section>  
             <h1 class="tituloPages">Plantel de la <br> <span>Selección Argentina</span></h1>
                 <section>
                     <h2 class="subPlantel">arqueros</h2>
-                    <!--carrusel con fotos de los arqueros-->
+                    <div id="arquerosCarrusel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#arquerosCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#arquerosCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#arquerosCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner mb-5">
+                            <div class="carousel-item active">
+                                <div class="posicionamiento">
+                                    <img src="https://phantom-elmundo.unidadeditorial.es/4d502ba85c719cbb3fbfdc9d5afd55c6/crop/16x10/2024x1349/resize/473/f/webp/assets/multimedia/imagenes/2022/12/18/16713944329295.jpg" class="imagenCar d-block" alt="...">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Emiliano "Dibu" Martínez</h3></li>
+                                            <li><p>Arquero titular de la Selección</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://www.pasionfutbol.com/__export/1654350609002/sites/pasionfutbol/img/2022/06/04/armani_argentina.jpg_1804116215.jpg" class="imagenCar2 d-block" alt="...">
+                                    <div class="armani d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Franco Armani</h3></li>
+                                            <li><p>Arquero suplente de la Selección</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://media.tycsports.com/files/2021/06/11/292724/juan-musso_862x485.jpg?v=1" class="imagenCar d-block" alt="...">
+                                    <div class="musso d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Juan Musso</h3></li>
+                                            <li><p>Tercer arquero principal de la Selección</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#arquerosCarrusel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#arquerosCarrusel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </section>
 
                 <section>
                     <h2 class="subPlantel">defensores</h2>
-                    <!--carrusel con fotos de los defensores-->
+                    <div id="defensoresCarrusel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#defensoresCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#defensoresCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#defensoresCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#defensoresCarrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#defensoresCarrusel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#defensoresCarrusel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#defensoresCarrusel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </div>
+                        <div class="carousel-inner mb-5">
+                            <div class="carousel-item active">
+                                <div class="posicionamiento">
+                                    <img src="https://eshinchade.com.ar/wp-content/uploads/2023/07/Nahuel-Molina-hincha-de-Talleres-1ok.jpg " class="imagenCar d-block" alt="...">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Nahuel Molina</h3></li>
+                                            <li><p>Lateral derecho</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://images.pagina12.com.ar/styles/focal_content_1200x1050/public/2023-02/698649-whatsapp-20image-202023-02-17-20at-2018-26-25.jpeg?h=34bbd072&itok=lcNOmQJi" class="imagenCar3 d-block" alt="...">
+                                    <div class="montiel d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Gonzalo Montiel</h3></li>
+                                            <li><p>Lateral derecho</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://furiaonline.com.ar/fol/wp-content/uploads/2023/06/0_GettyImages-1244986844.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="cuti d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Cristian "Cuti" Romero</h3></li>
+                                            <li><p>Defensor central</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://canalshowsport.com.ar/wp-content/uploads/2022/12/otamendi.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="ota d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Nicolás Otamendi</h3></li>
+                                            <li><p>Defensor central</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://chajarialdia.com.ar/wp-content/uploads/2022/12/LisandroMartinez-Argentina.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="licha d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Lisandro "Licha" Martínez</h3></li>
+                                            <li><p>Defensor central</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://soydeportes.com.ar/wp-content/uploads/2023/01/tagliafico.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="taglia d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Nicolás Tagliafico</h3></li>
+                                            <li><p>Lateral izquierdo</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://media.minutouno.com/p/a7d288e76e8e45b336c0ea543a045587/adjuntos/150/imagenes/040/777/0040777305/marcos-acunajpg.jpg" class="imagenCar d-block" alt="...">
+                                    <div class="acuna d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Marcos "Huevo" Acuña</h3></li>
+                                            <li><p>Lateral izquierdo</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#defensoresCarrusel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#defensoresCarrusel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </section>
 
                 <section>
                     <h2 class="subPlantel">mediocampistas</h2>
-                    <!--carrusel con foto de los mediocampistas-->
+                    <div id="mediocamCarrusel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#mediocamCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#mediocamCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#mediocamCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#mediocamCarrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#mediocamCarrusel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#mediocamCarrusel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#mediocamCarrusel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </div>
+                        <div class="carousel-inner mb-5">
+                            <div class="carousel-item active">
+                                <div class="posicionamiento">
+                                    <img src="https://laseleccionargentina.com/wp-content/uploads/2023/11/Enzo-Fernandez-1.jpg" class="imagenCar d-block" alt="...">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Enzo Fernández</h3></li>
+                                            <li><p>Mediocentro</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://vtv1.mediacdn.vn/zoom/640_400/562122370168008704/2023/4/6/photo1680739697602-16807396978081464055702.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="maca d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Alexis Mac Allister</h3></li>
+                                            <li><p>Mediocentro</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://fotos.perfil.com/2023/06/24/trim/720/410/leandro-paredes-1595502.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="paredes d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Leandro Paredes</h3></li>
+                                            <li><p>Pivote</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://digitalhub.fifa.com/transform/47c26d25-742e-42c5-ab2c-3b3720daec61/Lo-Celso-Perfil" class="imagenCar3 d-block" alt="...">
+                                    <div class="gio d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Giovani Lo Celso</h3></li>
+                                            <li><p>Mediocentro ofensivo</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://resizer.glanacion.com/resizer/v2/argentinas-midfielder-07-rodrigo-de-paul-reacts-SCMZKWELF5EBDHYDR4LAOANJSA.jpg?auth=064b035164a76c9e266951864cb59ae3448a9674fd047afd93190ec405e5c1bd&width=880&height=586&quality=70&smart=true" class="imagenCar3 d-block" alt="...">
+                                    <div class="depaul d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Rodrigo De Paul</h3></li>
+                                            <li><p>Mediocentro</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://intn24.lalr.co/cms/2024/03/01215049/Exequiel-Palacios.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="taglia d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Exequiel Palacios</h3></li>
+                                            <li><p>Mediocentro</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://www.canal26.com/media/image/2024/03/18/594056.jpg" class="imagenCar d-block" alt="...">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Guido Rodríguez</h3></li>
+                                            <li><p>Pivote</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mediocamCarrusel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mediocamCarrusel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </section>
 
                 <section>
                     <h2 class="subPlantel">delanteros</h2>
-                    <!--carrusel con foto de los delanteros-->
+                    <div id="delCarrusel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#delCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#delCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#delCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#delCarrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#delCarrusel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#delCarrusel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner mb-5">
+                            <div class="carousel-item active">
+                                <div class="posicionamiento">
+                                    <img src="https://depor.com/resizer/akYqNYNTm2OBK-7FlOpb8a_l648=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/W7LZD2PNL5HFHILA3CWNZV2FZY.jpg" class="imagenCar2 d-block" alt="...">
+                                    <div class="leomessi d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Lionel Messi</h3></li>
+                                            <li><p>Extremo derecho</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltb3190eac5e0819b4/62650f53234cf04ce5461098/Angel_Di_Maria_Argentina_2022.jpg?auto=webp&format=pjpg&width=3840&quality=60" class="imagenCar3 d-block" alt="...">
+                                    <div class="taglia d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Ángel "Fideo" Di María</h3></li>
+                                            <li><p>Extremo</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://media.tycsports.com/files/2022/12/09/514585/lautaro-martinez_1440x810_wmk.webp?v=4" class="imagenCar3 d-block" alt="...">
+                                    <div class="paredes d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Lautaro "Toro" Martínez</h3></li>
+                                            <li><p>Delantero centro</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://www.futbolparatodos.com.ar/noticias/wp-content/uploads/2023/12/julian-alvarez-argentina.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="julian d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Julián "La araña" Álvarez</h3></li>
+                                            <li><p>Delantero centro</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://www.elgrafico.com.ar/media/cache/pub_news_details_large/media/i/82/69/8269722e0ce751928143ef8957bce4fbb332c35f.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="dybala d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Paulo "La joya" Dybala</h3></li>
+                                            <li><p>Mediapunta</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://www.elgrafico.com.ar/media/cache/pub_news_details_large/media/i/eb/85/eb85b8af02e180007f76a43eac88820b4471102c.jpg" class="imagenCar3 d-block" alt="...">
+                                    <div class="taglia d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Nicolás González</h3></li>
+                                            <li><p>Extremo</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#delCarrusel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#delCarrusel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </section>
 
                 <section>
                     <h2 class="subPlantel">cuerpo técnico</h2>
-                    <!--carrusel con foto del cuerpo tecnico-->
+                    <div id="ctCarrusel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#ctCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#ctCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#ctCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#ctCarrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner mb-5">
+                            <div class="carousel-item active">
+                                <div class="posicionamiento">
+                                    <img src="https://i0.wp.com/elintra.com.ar/wp-content/uploads/2024/01/Lionel-Scaloni-2.png?resize=1024%2C576&ssl=1" class="imagenCar d-block" alt="...">
+                                    <div class="scalo d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Lionel Scaloni</h3></li>
+                                            <li><p>Director Técnico</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://media.tycsports.com/files/2023/03/21/547662/walter-samuel_1440x810_wmk.webp?v=1" class="imagenCar2 d-block" alt="...">
+                                    <div class="samu d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Walter Samuel</h3></li>
+                                            <li><p>Ayudante Técnico</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://media.tycsports.com/files/2019/11/03/76117/pablo-aimar.jpg" class="imagenCar d-block" alt="...">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Pablo Aimar</h3></li>
+                                            <li><p>Ayudante Técnico</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="posicionamiento">
+                                    <img src="https://media.lacapital.com.ar/p/2c12224eb3d90180d3155c8db9973e4a/adjuntos/204/imagenes/031/478/0031478398/1200x675/smart/ayalajpg.jpg" class="imagenCar d-block" alt="...">
+                                    <div class="ayala d-flex flex-column align-items-center justify-content-end">
+                                        <ul>
+                                            <li><h3>Roberto Ayala</h3></li>
+                                            <li><p>Ayudante Técnico</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ctCarrusel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#ctCarrusel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </section>
         </section>
     </main>
@@ -68,5 +458,7 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

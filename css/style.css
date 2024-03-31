@@ -81,6 +81,7 @@ nav ul{
     align-items: center;
     gap: 1.875rem;
     width: 95%;
+    margin: 0;
 }
 
 nav div{
@@ -492,6 +493,226 @@ footer div ul p{
     font-style: normal;
     font-size: 30px;
     text-transform: uppercase;
+    text-align: center;
+}
+.carousel-inner{
+    width: 100%;
+    height: 400px;
+}
+.carousel-item{
+    height: 100%;
+    width: 100%;
+}
+.posicionamiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    margin-bottom: 60px;
+}
+.carousel-caption ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 601px;
+    padding: 0;
+    margin-bottom: -40px;
+    color: white;
+}
+.carousel-indicators{
+    margin-bottom: -30px;
+}
+ul h3{
+    padding-top: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+ul p{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Fotos de jugadores */
+.imagenCar{
+    width: auto;
+    height: 100%;
+}
+.imagenCar2{
+    width: 700px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.imagenCar3{
+    width: 700px;
+    height: auto;
+    margin-bottom: -190px;
+    padding: 0;
+}
+.armani ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 700px;
+    padding: 0;
+    margin-top: -60px;
+    color: white;
+    text-align: center;
+}
+.musso ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 713px;
+    padding: 0;
+    margin-top: -93px;
+    color: white;
+    text-align: center;
+}
+.montiel ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 700px;
+    padding: 0;
+    margin-top: -400px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.cuti ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 713px;
+    padding: 0;
+    margin-top: -26px;
+    color: white;
+    text-align: center;
+}
+.ota ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 702px;
+    padding: 0;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+}
+.licha ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 700px;
+    padding: 0;
+    margin-top: -27px;
+    color: white;
+    text-align: center;
+}
+.taglia ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 702px;
+    padding: 0;
+    margin-top: 103px;
+    color: white;
+    text-align: center;
+}
+.acuna ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 595px;
+    padding: 0;
+    margin-top: -92px;
+    color: white;
+    text-align: center;
+}
+.maca ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 700px;
+    padding: 0;
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.paredes ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 702px;
+    padding: 0;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+.gio ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 700px;
+    padding: 0;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+}
+.depaul ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 700px;
+    padding: 0;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+.leomessi ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 700px;
+    padding: 0;
+    margin-top: -93px;
+    color: white;
+    text-align: center;
+}
+.julian ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 702px;
+    padding: 0;
+    margin-top: 90px;
+    color: white;
+    text-align: center;
+}
+.dybala ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 700px;
+    padding: 0;
+    margin-top: 55px;
+    color: white;
+    text-align: center;
+}
+.scalo ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 712px;
+    padding: 0;
+    margin-top: -92px;
+    color: white;
+    text-align: center;
+}
+.samu ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 701px;
+    padding: 0;
+    margin-top: -93px;
+    color: white;
+    text-align: center;
+}
+.ayala ul{
+    list-style: none;
+    background-color: #2c2a2a;
+    width: 713px;
+    padding: 0;
+    margin-top: -93px;
+    color: white;
     text-align: center;
 }
 /*CSS página clásicos*/
