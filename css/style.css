@@ -785,7 +785,7 @@ ul p{
     height: 14.375rem;
     background-color: #1A1A1A;
     font-size: 20px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 40px;
     padding: 1.25rem 1.25rem;
     box-shadow: 2px 2px 2px white;
     overflow: auto;
@@ -806,7 +806,7 @@ ul p{
     height: 18.25rem;
     background-color: #1A1A1A;
     font-size: 20px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 40px;
     padding: 1.5625rem 1.875rem;
     padding-top: 20px;
     box-shadow: 2px 2px 2px white;
@@ -817,7 +817,7 @@ ul p{
     height: 13.5625rem;
     background-color: #1A1A1A;
     font-size: 20px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 40px;
     padding: 1.5625rem 1.5625rem;
     box-shadow: 2px 2px 2px white;
     overflow: auto;
@@ -832,13 +832,15 @@ ul p{
     box-shadow: 2px 2px 2px white;
     overflow: auto;
 }
-.subClas{
+.subClas h2, .subClas h3{
     color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 4.375rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 30px;
-    text-align: center;
+    margin-bottom: -50px;
 }
 
 .rivTitle{
@@ -1232,26 +1234,28 @@ input{
     .imagenPan{
         padding: 1.25rem 45px 1.25rem 3.125rem;
     }
-}
-/*plantel*/
-.musso ul{
-    margin-top: -88px;
-}
-.montiel ul{
-    margin-top: -420;
-    padding-bottom: 7px;
-}
-.cuti ul{
-    padding-bottom: 5px;
-}
-.ota ul{
-    padding-bottom: 5px;
-}
-.licha ul{
-    padding-bottom: 5px;
-}
-.acuna ul{
-    padding-bottom: 5px;
+    /*plantel*/
+    .musso ul{
+        margin-top: -88px;
+    }
+    .montiel ul{
+        margin-top: -420;
+        padding-bottom: 7px;
+    }
+    .cuti ul, .ota ul, .licha ul, .acuna ul, .maca ul, .depaul ul, .leomessi ul, .scalo ul, .samu ul, .ayala ul{
+        padding-bottom: 5px;
+    }
+    /* clasicos */
+    .subClas{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .subClas h2, .subClas h3{
+        font-size: 18px;
+        width: 80%;
+        line-height: 1.2em;
+    }
 }
 /* Estos media queries no son pedidos pero no lograba acomodar el texto, no aparecía completo dentro del contenedor
 y si utilizaba mucho padding top se empezaba a sobreslair. También intenté con z-index, intenté poner un overflow-x: scroll
@@ -1307,5 +1311,9 @@ pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
     /* plantel */
     .dibuImg img{
         padding-right: 190px;
+    }
+    /* clasicos */
+    .pargBr, .pargUru, .pargIng, .pargAl, .pargHol{
+        font-size: 18px
     }
 }
