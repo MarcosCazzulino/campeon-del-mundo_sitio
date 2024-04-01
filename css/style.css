@@ -881,6 +881,7 @@ input{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 80px;
 }
 .contact p{
     color: white;
@@ -1246,6 +1247,18 @@ input{
     .nomb, .message, .e-mail{
         width: 45%;
         height: auto;
+    }
+    .nomb:active{
+        background-color: rgb(172, 159, 57);
+        transition: all .5s;
+    }
+    .message:active{
+        background-color: rgb(172, 159, 57);
+        transition: all .5s;
+    }
+    .e-mail:active{
+        background-color: rgb(172, 159, 57);
+        transition: all .5s;
     }
 }
 /* Estos media queries no son pedidos pero no lograba acomodar el texto, no aparecía completo dentro del contenedor
