@@ -13,21 +13,29 @@
 <body>
     <header class="header">
         <nav class="navBar">
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="./palmares.html">palmarés</a></li>
-                <li><a class="marcada" href="#">plantel</a></li>
-                <li><a href="./clasicos.html">clásicos</a></li>
-                <li><a href="./contacto.html">contacto</a></li>
-            </ul>
-            <div>
+            <div class="logo">
                 <img src="../assets/img/copa-del-mundo-blanco-y-negra.png" alt="copa del mundo sin su característico color dorado, en blanco y negro">
             </div>
+            <label class="burger" for="menu-hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="white" class="burgericon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+            <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
+            <ul class="ul-links">
+                <li class="li-links"><a class="link" href="../index.html">inicio</a></li>
+                <li class="li-links"><a class="link" href="./palmares.html">palmarés</a></li>
+                <li class="li-links"><a class="marcada" href="#">plantel</a></li>
+                <li class="li-links"><a class="link" href="./clasicos.html">clásicos</a></li>
+                <li class="li-links"><a class="link" href="./contacto.html">contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>  
-            <h1 class="tituloPages">Plantel de la <br> <span>Selección Argentina</span></h1>
+        <section>
+            <div class="tituloPages">
+                <h1 class="titPag">Plantel de la <br> <span>Selección Argentina</span></h1>
+            </div>
                 <section>
                     <h2 class="subPlantel">arqueros</h2>
                     <div id="arquerosCarrusel" class="carousel slide">
@@ -38,7 +46,7 @@
                         </div>
                         <div class="carousel-inner mb-5">
                             <div class="carousel-item active">
-                                <div class="posicionamiento">
+                                <div class="posicionamiento dibuImg">
                                     <img src="https://phantom-elmundo.unidadeditorial.es/4d502ba85c719cbb3fbfdc9d5afd55c6/crop/16x10/2024x1349/resize/473/f/webp/assets/multimedia/imagenes/2022/12/18/16713944329295.jpg" class="imagenCar d-block" alt="...">
                                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-end">
                                         <ul>

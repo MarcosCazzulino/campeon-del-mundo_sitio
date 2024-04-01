@@ -12,16 +12,22 @@
 <body>
     <header class="header">
         <nav class="navBar">
-            <ul>
-                <li><a class="marcada" href="#">inicio</a></li>
-                <li><a href="./pages/palmares.html">palmarés</a></li>
-                <li><a href="./pages/plantel.html">plantel</a></li>
-                <li><a href="./pages/clasicos.html">clásicos</a></li>
-                <li><a href="./pages/contacto.html">contacto</a></li>
-            </ul>
-            <div>
+            <div class="logo">
                 <img src="./assets/img/copa-del-mundo-blanco-y-negra.png" alt="copa del mundo sin su característico color dorado, en blanco y negro">
             </div>
+            <label class="burger" for="menu-hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="white" class="burgericon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+            <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
+            <ul class="ul-links">
+                <li class="li-links"><a class="marcada" href="#">inicio</a></li>
+                <li class="li-links"><a class="link" href="./pages/palmares.html">palmarés</a></li>
+                <li class="li-links"><a class="link" href="./pages/plantel.html">plantel</a></li>
+                <li class="li-links"><a class="link" href="./pages/clasicos.html">clásicos</a></li>
+                <li class="li-links"><a class="link" href="./pages/contacto.html">contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -32,8 +38,12 @@
             </div>
         </section>
         <section>
-            <h1 class="tituloIndex">Bienvenidos a la página de la <br> <span>Selección Argentina</span></h1>
-            <h2 class="historicos">Mejores jugadores históricos</h2>
+            <div class="tituloIndex">
+                <h1 class="tit">Bienvenidos a la página de la <br> <span>Selección Argentina</span></h1>
+            </div>
+            <div class="historicos">
+                <h2>Mejores jugadores históricos</h2>
+            </div>
             <div class="jugHist">
                 <div class="maradona">
                     <img src="./assets/img/maradona.jpeg" alt="">
@@ -57,7 +67,7 @@
         </section>
     </main>
     <footer>
-        <p class="montiel">Somos todos Montiel...</p>
+        <p class="somosMontiel">Somos todos Montiel...</p>
         <div>
             <ul class="redes">
                 <li><a href="https://www.instagram.com/afaseleccion/" target="_blank"><img class="ig" src="./assets/img/instagram.png" alt="logo de instagram blanco con bordes negros"></a></li>

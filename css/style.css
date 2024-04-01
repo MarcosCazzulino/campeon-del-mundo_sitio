@@ -10,6 +10,8 @@ header{
     position: sticky;
     top: 0;
     z-index: 3;
+    height: 65px;
+    background-color: #1A1A1A;;
 }
 
 h1 span::selection{
@@ -44,28 +46,33 @@ a::selection{
     background-color: rgb(172, 159, 57);
     color: white;
 }
-
+.menu-hamburguesa{
+    display: none;
+}
+.burger{
+    display: none;
+}
 nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #1A1A1A;
     font-size: 20px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     width: 100%;
-    height: 4.0625rem;
+    height: 100%;
 }
 
-header nav ul li a{
+.link{
     color: rgb(172, 169, 169);
 }
 
-header nav ul li a:hover{
+.link:hover{
     color: #00F4FF;
+    transition: all .5s;
 }
 
 .marcada{
@@ -85,15 +92,14 @@ nav ul{
     padding: 0;
 }
 
-nav div{
+.logo{
     width: 5%;
     height: 100%;
-    padding-left: 1.875rem;
-    margin-left: -2.5rem;
+    padding-left: 30px;
 }
 
 nav div img{
-    padding-top: .4375rem;
+    padding-top: 4px;
     width: auto;
     height: 90%;
 }
@@ -105,21 +111,25 @@ a{
 
 body{
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .tituloPages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
+    width: 100%;
+    height: 140px;
     background-color: #1A1A1A;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    line-height: 1.1em;
     padding: .625rem 0;
     margin: 4.375rem 0;
+}
+.titPag{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
 }
 .tituloPages span{
     color: #00F4FF;
@@ -127,7 +137,6 @@ body{
 
 h1{
     color: white;
-    background-color: #002021;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -146,22 +155,25 @@ h1{
 /*CSS del Index*/
 
 .tituloIndex{
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #1A1A1A;
-    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 70px;
     font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    line-height: 1.1em;
-    padding: .625rem 0;
-    margin-bottom: 4.375rem;
 }
-.tituloIndex span{
+.tit{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+.tit span{
     color: #00F4FF;
 }
-.historicos{
+.historicos h2{
     color: white;
     font-size: 30px;
     text-align: center;
@@ -249,13 +261,13 @@ h1{
     justify-content: center;
     align-items: center;
     padding-bottom: 6.25rem;
-    padding-top: 3.75rem;
+    padding-top: 30px;
 }
 .indexLogo img{
     padding-bottom: 3.75rem;
     padding-top: 3.75rem;
-    width: 18.75rem;
-    height: 37.5rem;
+    width: 20%;
+    height: auto;
 }
 .indexLogo p{
     font-size: 25px;
@@ -265,6 +277,7 @@ h1{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
+
 }
 .refran{
     font-family: "Nunito", sans-serif;
@@ -298,7 +311,7 @@ footer{
     align-items: center;
     height: 7.5rem;
 }
-.montiel{
+.somosMontiel{
     color: white;
     text-align: center;
     font-family: "Nunito", sans-serif;
@@ -421,14 +434,29 @@ footer div ul p{
 .palmaresIzquierda div{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 10.3125rem;
     width: 37.5rem;
     overflow: auto;
     padding: 0 .9375rem;
 }
-.palmaresIzquierda p{
+.textoMun:before{
+    content: attr(data-desktoptext);
     font-size: 20px;
     width: 34.375rem;
+    text-align: left;
+}
+.textoFin:before{
+    content: attr(data-desktoptext);
+    font-size: 20px;
+    width: 34.375rem;
+    text-align: left;
+}
+.textoPan:before{
+    content: attr(data-desktoptext);
+    font-size: 20px;
+    width: 34.375rem;
+    text-align: left;
 }
 .palmaresDerecha{
     display: flex;
@@ -447,12 +475,20 @@ footer div ul p{
 .palmaresDerecha div{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 11.875rem;
     width: 34.375rem;
     overflow: auto;
     padding: 0 .9375rem;
 }
-.palmaresDerecha p{
+.textoCa:before{
+    content: attr(data-desktoptext);
+    width: 34.375rem;
+    font-size: 20px;
+    text-align: left;
+}
+.textoConf:before{
+    content: attr(data-desktoptext);
     width: 34.375rem;
     font-size: 20px;
     text-align: left;
@@ -595,7 +631,7 @@ ul p{
 .cuti ul{
     list-style: none;
     background-color: #2c2a2a;
-    width: 44.5625rem;
+    width: 702px;
     padding: 0;
     margin-top: -1.625rem;
     color: white;
@@ -832,14 +868,9 @@ input:hover{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
+    transition: all .5s;
 }
 input:focus::-webkit-input-placeholder{
-    opacity: 0;
-}
-input:focus::-moz-placeholder{
-    opacity: 0;
-}
-input:focus::-ms-placeholder{
     opacity: 0;
 }
 input:focus{
@@ -937,18 +968,344 @@ input{
 }
 
 @media (max-width: 768px){
-    .indexLogo{
-        width: 100%;
-        height: 570px;
-        margin-bottom: 20px;
+    /* header */
+    .burger{
+        display: block;
+        height: 79%;
+        margin-right: -10px;
+        cursor: pointer;
     }
-    .indexLogo img{
-        width: 30%;
+    .header{
+        height: 50px;
+    }
+    .navBar{
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .ul-links{
+        display: flex;
+        justify-content: center;
+        background-image: url(../assets/img/desenfocada.png);
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        right: 0;
+        transition: all .3s;
+    }
+    .menu-hamburguesa:checked + .ul-links{
+        height: calc(100vh - 3.125rem);
+    }
+    .link:active{
+        color: #00F4FF;
+        text-decoration: underline;
+    }
+    .link{
+        color: white;
+    }
+    .logo{
+        padding: 0;
+        margin: 0;
+    }
+    .tituloPages{
         height: auto;
     }
+    .titPag{
+        padding: 15px 0;
+        font-size: 20px;
+        font-weight: 500;
+        width: 80%;
+    }
+    .footerPages{
+        height: auto;
+    }
+    .footerPages .redes{
+        padding: 20px 0 15px 0;
+    }
+/*index*/
+    .indexLogo img{
+        width: 120px;
+        height: auto;
+    }
+    .indexLogo p{
+        width: 60%;
+        font-size: 18px;
+        margin-top: -20px;
+        line-height: 1.1em;
+    }
+    .refran{
+        font-size: 18px;
+    }
+    .tituloIndex{
+        margin-top: -40px;
+        height: auto;
+    }
+    .tit{
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: 500;
+        width: 80%;
+    }
+    .historicos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .historicos h2{
+        font-size: 22px;
+        width: 80%;
+        line-height: 1.2em;
+    }
     .jugHist{
+        /* grid-template-rows: repeat(6, 200px); */
         display: flex;
         flex-direction: column;
-        gap: 70px;
+        gap: 4.375rem;
+    }
+    .maradona{
+        /* grid-column: 2/3;
+        grid-row: 3/5; */
+        margin: 0;
+        width: 28%;
+        height: auto;
+        text-align: center;
+        order: 2;
+    }
+    .messi{
+        /* grid-row: 1/3;*/
+        margin: 0;
+        width: 28%;
+        height: auto;
+        text-align: center;
+        order: 1;
+    }
+    .diStefano{
+        /* grid-column: 2/3;
+        grid-row: 5/6; */
+        margin: 0;
+        width: 28%;
+        height: auto;
+        text-align: center;
+        order: 3;
+    }
+    .nombres{
+        font-size: 20px;
+        line-height: 1.1em;
+    }
+    .palmaresIndex{
+        display: none;
+    }
+    footer{
+        height: auto;
+    }
+    footer div{
+        flex-direction: column;
+    }
+    .somosMontiel{
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .redes{
+        gap: 10px;
+        padding: 0;
+        margin-right: 10px;
+        padding-bottom: 30px;
+    }
+    .redes img{
+        width: 80%;
+        height: auto;
+    }
+    .derechosAutor{
+        justify-content: center;
+        align-items: center;
+        margin-right: -16px;
+        padding-bottom: 10px;
+    }
+    .derechosAutor p{
+        text-align: center;
+        font-size: 12px;
+    }
+    /*palmares*/
+    .textoPan:before{
+        content: attr(data-tablettext);
+    }
+    .textoConf:before{
+        content: attr(data-tablettext);
+    }
+    .textoFin:before{
+        content: attr(data-tablettext);
+    }
+    .textoMun:before{
+        content: attr(data-tablettext);
+    }
+    .textoCa:before{
+        content: attr(data-tablettext);
+        text-align: center;
+    }
+    .palmaresIzquierda{
+        height: 150px;
+        background-image: linear-gradient(90deg, rgb(172, 159, 57), rgb(0,0,0) 90%);
+    }
+    .palmaresDerecha{
+        height: 150px;
+        background-image: linear-gradient(270deg, rgb(172, 159, 57), rgb(0,0,0) 90%);
+    }
+    .palmaresIzquierda div{
+        justify-content: flex-start;
+        width: 100px;
+        line-height: 40px;
+        padding: 0;
+    }
+    .palmaresDerecha div{
+        justify-content: flex-end;
+        width: 100px;
+        height: 100px;
+        line-height: 40px;
+        overflow-x: scroll;
+    }
+    /* .palmaresDerecha .copam{
+        height: 120px;
+        width: 600px;
+    } */
+    .copam{
+        height: 220px;
+    }
+    .copam div{
+        height: 150px;
+        width: 400px;
+    }
+    .munNum{
+        margin: 100px 75px 0 -80px;
+        width: 35px;
+        height: 35px;
+        padding-top: 0;
+    }
+    .numCa{
+        font-size: 20px;
+        margin: 150px -80px 0 45px;
+        width: 40px;
+        height: 40px;
+        padding-top: 5px;
+    }
+    .numFin{
+        margin: 90px 72px 0 -78px;
+        width: 35px;
+        height: 35px;
+        padding: 0;
+    }
+    .numConf{
+        margin: 90px -90px 0 65px;
+        background-color: rgba(0, 0, 0, 0.788);
+        width: 35px;
+        height: 35px;
+        padding-top: 0;
+    }
+    .numPan{
+        margin: 90px 68px 0 -75px;
+        width: 35px;
+        height: 35px;
+        padding-top: 0;
+    }
+    .imagenMundial{
+        padding-right: 50px;
+    }
+    .imagenCa{
+        padding: 1.25rem 3.125rem 1.25rem 50px;
+    }
+    .imagenFinalissima{
+        padding: 1.25rem 40px 1.25rem 45px;
+    }
+    .imagenConf{
+        padding: 20px 70px 20px 68px;
+    }
+    .imagenPan{
+        padding: 1.25rem 45px 1.25rem 3.125rem;
+    }
+}
+/*plantel*/
+.musso ul{
+    margin-top: -88px;
+}
+.montiel ul{
+    margin-top: -420;
+    padding-bottom: 7px;
+}
+.cuti ul{
+    padding-bottom: 5px;
+}
+.ota ul{
+    padding-bottom: 5px;
+}
+.licha ul{
+    padding-bottom: 5px;
+}
+.acuna ul{
+    padding-bottom: 5px;
+}
+/* Estos media queries no son pedidos pero no lograba acomodar el texto, no aparecía completo dentro del contenedor
+y si utilizaba mucho padding top se empezaba a sobreslair. También intenté con z-index, intenté poner un overflow-x: scroll
+pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
+@media (max-width: 457px){
+    .copam div .textoCa:before{
+        padding: 0;
+        font-size: 16px;
+    }
+    .copam div{
+        height: 180px;
+        padding-top: 0;
+    }
+}
+@media (max-width: 360px){
+    .copam div{
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 320px){
+    /*header*/
+    .burger{
+        margin-right: -10px;
+    }
+    .ul-links{
+        background-image: url(../assets/img/a.png);
+    }
+    /* index */
+    .indexLogo{
+        margin-top: -20px;
+    }
+    .indexLogo p{
+        width: 183px;
+    }
+    .indexLogo img{
+        margin: 0;
+        width: 120px;
+        height: auto;
+    }
+    .somosMontiel{
+        width: 90%;
+        line-height: 1.1em;
+        font-size: 20px;
+    }
+    /* Palmares */
+    .palmaresIzquierda{
+        background-image: linear-gradient(90deg, rgb(172, 159, 57), rgb(0,0,0) 100%)
+    }
+    .palmaresDerecha{
+        background-image: linear-gradient(270deg, rgb(172, 159, 57), rgb(0,0,0) 100%);
+    }
+    /* plantel */
+    .dibuImg img{
+        padding-right: 190px;
     }
 }
