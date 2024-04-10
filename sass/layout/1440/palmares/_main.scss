@@ -1,0 +1,111 @@
+section{
+    .palmaresIzquierda{
+        @include flex(row, flex-start, center, none);
+        display: flex;
+        color: map-get($colores, textoPrimario);
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        background-image: linear-gradient(90deg, $degDorado, $degNegro 85%);
+        width: 100%;
+        height: 12.5rem;
+        .imagenMundial{
+            padding: 1.25rem 5rem 1.25rem 3.125rem;
+            width: auto;
+            height: 100%;
+            border-right: 2px solid $separador;
+        }
+        .munNum{
+            text-align: center;
+            font-size: 24px;
+            margin: 8.125rem 6.25rem 0 -6.875rem;
+            background-color: $fondoNum;
+            width: 2.5rem;
+            height: 2.5rem;
+            padding-top: .125rem;
+            border: 1px solid $bordenum;
+            border-radius: 100%;
+            box-shadow: 3px 3px 4px $sombra;
+        }
+        .imagenFinalissima{
+            @extend .imagenMundial;
+            padding: 1.25rem 3.75rem 1.25rem 3.125rem;
+        }
+        .numFin{
+            @extend .munNum;
+            margin: 8.125rem 5.3125rem 0 -5.9375rem;
+        }
+        .imagenPan{
+            @extend .imagenMundial;
+            padding: 1.25rem 4.625rem 1.25rem 3.125rem;
+        }
+        .numPan{
+            @extend .munNum;
+            margin: 7.8125rem 5.9375rem 0 -6.5625rem;
+        }
+        div{
+            @include flex(row, center, center, none);
+            display: flex;
+            height: 10.3125rem;
+            width: 37.5rem;
+            overflow: auto;
+            padding: 0 .9375rem;
+            .textoMun:before{
+                content: attr(data-desktoptext);
+                font-size: 20px;
+                width: 34.375rem;
+                text-align: left;
+            }
+            .textoFin:before{
+                @extend .textoMun:before;
+            }
+            .textoPan:before{
+                @extend .textoMun:before;
+            }
+        }
+    }
+    .palmaresDerecha{
+        @extend .palmaresIzquierda;
+        @include flex(row-reverse, flex-start, center, none);
+        background-image: linear-gradient(270deg, $degDorado, $degNegro 85%);
+        height: 13.75rem;
+        .imagenCa{
+            @extend .imagenMundial;
+            padding: 1.25rem 3.125rem 1.25rem 5rem;
+            z-index: 1;
+            border-left: 2px solid $separador;
+        }
+        .numCa{
+            @extend .munNum;
+            margin: 9.0625rem -7.1875rem 0 5.625rem;
+            width: 3.125rem;
+            height: 3.125rem;
+            padding-top: .375rem;
+            box-shadow: -3px 3px 4px $sombra;
+            z-index: 2;
+        }
+        .imagenConf{
+            @extend .imagenCa;
+            padding: 2.5rem 3.125rem 2.5rem 6.875rem;
+        }
+        .numConf{
+            @extend .numCa;
+            margin: 6.875rem -8.4375rem 0 7.5rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            padding-top: .125rem;
+            z-index: 2;
+        }
+        div{
+            height: 11.875rem;
+            width: 34.375rem;
+            .textoCa:before{
+                @extend .textoMun:before;
+            }
+            .textoConf:before{
+                @extend .textoMun:before;
+            }
+        }
+    }
+}

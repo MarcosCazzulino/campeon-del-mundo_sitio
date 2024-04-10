@@ -1,0 +1,55 @@
+/*Utilities*/
+
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/*base*/
+
+@import "./base/generales";
+
+/*Layout*/
+
+/*index*/
+@import "./layout/1440/index/main";
+@import "./layout/1440/index/footer";
+
+/*palmares*/
+@import "./layout/1440/palmares/main";
+
+/*plantel*/
+@import "./layout/1440/plantel/main";
+
+/*clasicos*/
+@import "./layout/1440/clasicos/main";
+
+/*contacto*/
+@import "./layout/1440/contacto/main";
+
+/*Media 768*/
+@media (max-width: 768px){
+    @import "./layout/768/generales768";
+    @import "./layout/768/index768";
+    @import "./layout/768/palmares768";
+    @import "./layout/768/clasicos768";
+    @import "./layout/768/contacto768";
+}
+/* Estos media queries no son pedidos pero no lograba acomodar el texto, no aparecía completo dentro del contenedor
+y si utilizaba mucho padding top se empezaba a sobresalir. También intenté con z-index, intenté poner un overflow-x: scroll
+pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
+@media (max-width: 412px){
+    @import "./layout/412/palmares412";
+}
+@media (max-width: 352px){
+    @import "./layout/352/palmares352";
+}
+@media (max-width: 320px){
+    @import "./layout/320/generales320";
+    @import "./layout/320/index.320";
+    @import "./layout/320/palmares320";
+    @import "./layout/320/clasicos320";
+    @import "./layout/320/contacto.320";
+}
+
+/*Components*/
+@import "./components/bootstrap";

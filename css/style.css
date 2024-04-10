@@ -1,341 +1,306 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*CSS general*/
-.header{
+@charset "UTF-8";
+/*Utilities*/
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+/*Pseudoclases y elementos*/
+p::selection, h1 span::selection, h1::selection, h2::selection, .clasRiv .subClas h3::selection, h3::selection, .tituloColor::selection, .refran::selection, a::selection {
+  background-color: #ac9f39;
+  color: white; }
+
+/*Body*/
+body {
+  width: 100%;
+  background-color: black; }
+  body .header {
     position: sticky;
     top: 0;
     z-index: 3;
     height: 65px;
-    background-color: #1A1A1A;;
-}
-h1 span::selection{
-    background-color: rgb(172, 159, 57);
-    color: white;
-}
-p::selection{
-    background-color: rgb(172, 159, 57);
-    color: white;
-}
-h1::selection{
-    background-color: rgb(172, 159, 57);
-    color: white;
-}
-h2::selection{
-    background-color: rgb(172, 159, 57);
-    color: white;
-}
-h3::selection{
-    background-color: rgb(172, 159, 57);
-    color: white;
-}
-.tituloColor::selection{
-    background-color: rgb(172, 159, 57);
-    color: white;
-}
-.refran::selection{
-    background-color: rgb(172, 159, 57);
-    color: white;
-}
-a::selection{
-    background-color: rgb(172, 159, 57);
-    color: white;
-}
-.menu-hamburguesa{
-    display: none;
-}
-.burger{
-    display: none;
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    width: 100%;
-    height: 100%;
-}
-.link{
-    color: rgb(172, 169, 169);
-}
-.link:hover{
-    color: #00F4FF;
-    transition: all .5s;
-}
-.marcada{
-    color: #00F4FF;
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    gap: 1.875rem;
-    width: 95%;
-    margin: 0;
-    padding: 0;
-}
-.logo{
-    width: 5%;
-    height: 100%;
-    padding-left: 30px;
-}
-nav div img{
-    padding-top: 4px;
-    width: auto;
-    height: 90%;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-body{
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-}
-.tituloPages{
+    background-color: #1A1A1A; }
+    body .header nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: none;
+      display: flex;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      width: 100%;
+      height: 100%; }
+      body .header nav .logo {
+        width: 5%;
+        height: 100%;
+        padding-left: 30px; }
+        body .header nav .logo img {
+          padding-top: 4px;
+          width: auto;
+          height: 90%; }
+      body .header nav .burger {
+        display: none; }
+      body .header nav .menu-hamburguesa {
+        display: none; }
+      body .header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem;
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        width: 95%;
+        margin: 0;
+        padding: 0; }
+        body .header nav ul li .marcada {
+          color: #00F4FF; }
+        body .header nav ul li .link {
+          color: #a3a1a1; }
+          body .header nav ul li .link:hover {
+            color: #00F4FF;
+            transition: all .5s; }
+  body main section .tituloPages, body main section .titContact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    gap: none;
+    display: flex;
     width: 100%;
-    height: 140px;
+    height: 8.75rem;
     background-color: #1A1A1A;
     padding: .625rem 0;
-    margin: 4.375rem 0;
-}
-.titPag{
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-}
-.tituloPages span{
-    color: #00F4FF;
-}
-h1{
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-align: center;
-    font-size: 45px;
-    text-transform: uppercase;
-    line-height: 1.1em;
-}
-.footerPages{
+    margin: 4.375rem 0; }
+    body main section .tituloPages span, body main section .titContact span {
+      color: #00F4FF; }
+    body main section .tituloPages .titPag, body main section .titContact .titPag {
+      width: 100%;
+      font-size: 40px; }
+  body main section .titContact {
+    height: 6.25rem; }
+  body footer {
+    background-color: #002021;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    display: flex;
+    height: 7.5rem; }
+    body footer div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: none;
+      display: flex; }
+      body footer div .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: none;
+        gap: none;
+        display: flex;
+        list-style-type: none;
+        gap: .9375rem;
+        padding-left: .9375rem;
+        margin: 0; }
+      body footer div .derechosAutor {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: none;
+        gap: 0;
+        display: flex;
+        margin: 0;
+        padding: 0; }
+        body footer div .derechosAutor p, body footer div .derechosAutor h1 span::selection, h1 body footer div .derechosAutor span::selection, body footer div .derechosAutor h1::selection, body footer div .derechosAutor h2::selection, body footer div .derechosAutor .clasRiv .subClas h3::selection, .clasRiv .subClas body footer div .derechosAutor h3::selection, body footer div .derechosAutor h3::selection, body footer div .derechosAutor .tituloColor::selection, body footer div .derechosAutor .refran::selection, body footer div .derechosAutor a::selection {
+          font-size: 13px;
+          padding-right: 1.25rem;
+          text-align: right;
+          color: white;
+          font-family: "Nunito", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
+          margin: 0; }
+  body .footerPages {
     height: 4.375rem;
     margin-top: 1.25rem;
-    padding: 0;
-}
-/*CSS del Index*/
-.tituloIndex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #1A1A1A;
-    width: 100%;
-    height: 140px;
-    margin-bottom: 70px;
-    font-weight: 600;
-}
-.tit{
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-}
-.tit span{
-    color: #00F4FF;
-}
-.historicos h2{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 4.375rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-transform: uppercase;
-    margin-bottom: -4.375rem;
-}
-.jugHist{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 12.5rem);
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 5rem;
-}
-.maradona{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 13.125rem;
-    height: 18.75rem;
-    gap: .9375rem;
-    margin-left: 1.875rem;
-}
-.maradona img{
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-}
-.messi{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 15rem;
-    height: 30rem;
-    gap: .9375rem;
-    margin-right: .4375rem;
-}
-.messi img{
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-}
-.diStefano{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 13.75rem;
-    height: 20rem;
-    gap: .9375rem;
-    margin-right: 1.875rem;
-}
-.diStefano img{
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-}
-.nombres{
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-.indexLogo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 6.25rem;
-    padding-top: 30px;
-}
-.indexLogo img{
+    padding: 0; }
+
+h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.1em; }
+
+/*Layout*/
+/*index*/
+.indexLogo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  display: flex;
+  padding-bottom: 6.25rem;
+  padding-top: 30px; }
+  .indexLogo img {
     padding-bottom: 3.75rem;
     padding-top: 3.75rem;
     width: 20%;
-    height: auto;
-}
-.indexLogo p{
+    height: auto; }
+  .indexLogo p, .indexLogo h1 span::selection, h1 .indexLogo span::selection, .indexLogo h1::selection, .indexLogo h2::selection, .indexLogo .clasRiv .subClas h3::selection, .clasRiv .subClas .indexLogo h3::selection, .indexLogo h3::selection, .indexLogo .tituloColor::selection, .indexLogo .refran::selection, .indexLogo a::selection {
     font-size: 25px;
     font-style: italic;
     text-align: center;
     color: white;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
-}
-.refran{
+    font-weight: 200; }
+  .indexLogo .refran {
     font-family: "Nunito", sans-serif;
     font-weight: 550;
     font-style: normal;
     font-size: 25px;
+    text-align: center; }
+
+section .tituloIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  display: flex;
+  background-color: #1A1A1A;
+  width: 100%;
+  height: 140px;
+  margin-bottom: 70px;
+  font-weight: 600; }
+  section .tituloIndex span {
+    color: #00F4FF; }
+  section .tituloIndex .tit {
+    width: 100%;
     text-align: center;
-}
-.palmaresIndex h2{
+    font-size: 40px; }
+
+section .historicos h2, section .historicos .clasRiv .subClas h3, .clasRiv .subClas section .historicos h3 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 4.375rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: -4.375rem; }
+
+section .jugHist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 12.5rem);
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 5rem; }
+  section .jugHist .nombres {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 20px; }
+  section .jugHist .maradona, section .jugHist .messi, section .jugHist .diStefano {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem;
+    display: flex;
+    color: white;
+    width: 13.125rem;
+    height: 18.75rem;
+    margin-left: 1.875rem; }
+    section .jugHist .maradona img, section .jugHist .messi img, section .jugHist .diStefano img {
+      width: 100%;
+      height: 100%;
+      border: 2px solid white; }
+  section .jugHist .messi {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 15rem;
+    height: 30rem;
+    margin-right: .4375rem;
+    margin-left: 0; }
+  section .jugHist .diStefano {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 13.75rem;
+    height: 20rem;
+    margin-right: 1.875rem;
+    margin-left: 0; }
+
+.palmaresIndex {
+  width: 100%;
+  padding-bottom: 4.6875rem; }
+  .palmaresIndex h2, .palmaresIndex .clasRiv .subClas h3, .clasRiv .subClas .palmaresIndex h3 {
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 35px;
     text-transform: uppercase;
-    text-align: center;
-}
-.palmaresIndex{
-    width: 100%;
-    padding-bottom: 4.6875rem;
-}
-footer{
-    background-color: #002021;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 7.5rem;
-}
-.somosMontiel{
-    color: white;
-    text-align: center;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 36px;
-    padding-bottom: .9375rem;
-}
-footer div{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.derechosAutor{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-}
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-    gap: .9375rem;
-    padding-left: .9375rem;
-    margin: 0;
-}
-footer div ul p{
-    font-size: 13px;
-    padding-right: 1.25rem;
-    text-align: right;
-    color: white;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    margin: 0;
-}
-/*CSS página Palmarés*/
-.munNum{
+    text-align: center; }
+
+.somosMontiel {
+  color: white;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+  padding-bottom: .9375rem; }
+
+/*palmares*/
+section .palmaresIzquierda, section .palmaresDerecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: none;
+  display: flex;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-image: linear-gradient(90deg, #ac9f39, black 85%);
+  width: 100%;
+  height: 12.5rem; }
+  section .palmaresIzquierda .imagenMundial, section .palmaresDerecha .imagenMundial, section .palmaresIzquierda .imagenFinalissima, section .palmaresDerecha .imagenFinalissima, section .palmaresIzquierda .imagenPan, section .palmaresDerecha .imagenPan, section .palmaresDerecha .imagenCa, section .palmaresDerecha .imagenConf {
+    padding: 1.25rem 5rem 1.25rem 3.125rem;
+    width: auto;
+    height: 100%;
+    border-right: 2px solid black; }
+  section .palmaresIzquierda .munNum, section .palmaresDerecha .munNum, section .palmaresIzquierda .numFin, section .palmaresDerecha .numFin, section .palmaresIzquierda .numPan, section .palmaresDerecha .numPan, section .palmaresDerecha .numCa, section .palmaresDerecha .numConf {
     text-align: center;
     font-size: 24px;
     margin: 8.125rem 6.25rem 0 -6.875rem;
@@ -345,470 +310,87 @@ footer div ul p{
     padding-top: .125rem;
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 100%;
-    box-shadow: 3px 3px 4px white;
-}
-.numCa{
-    text-align: center;
-    font-size: 24px;
-    margin: 9.0625rem -7.1875rem 0 5.625rem;
-    background-color: rgba(0, 0, 0, 0.788);
-    width: 3.125rem;
-    height: 3.125rem;
-    padding-top: .375rem;
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 100%;
-    box-shadow: -3px 3px 4px white;
-    z-index: 2;
-}
-.numFin{
-    text-align: center;
-    font-size: 24px;
-    margin: 8.125rem 5.3125rem 0 -5.9375rem;
-    background-color: rgba(0, 0, 0, 0.788);
-    width: 2.5rem;
-    height: 2.5rem;
-    padding-top: .125rem;
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 100%;
-    box-shadow: 3px 3px 4px white;
-}
-.numConf{
-    font-size: 24px;
-    text-align: center;
-    margin: 6.875rem -8.4375rem 0 7.5rem;
-    background-color: rgba(0, 0, 0, 0.788);
-    width: 2.5rem;
-    height: 2.5rem;
-    padding-top: .125rem;
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 100%;
-    box-shadow: -3px 3px 4px white;
-    z-index: 2;
-}
-.numPan{
-    font-size: 24px;
-    text-align: center;
-    margin: 7.8125rem 5.9375rem 0 -6.5625rem;
-    background-color: rgba(0, 0, 0, 0.788);
-    width: 2.5rem;
-    height: 2.5rem;
-    padding-top: .125rem;
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 100%;
-    box-shadow: 3px 3px 4px white;
-}
-.palmaresIzquierda{
+    box-shadow: 3px 3px 4px white; }
+  section .palmaresIzquierda .imagenFinalissima, section .palmaresDerecha .imagenFinalissima {
+    padding: 1.25rem 3.75rem 1.25rem 3.125rem; }
+  section .palmaresIzquierda .numFin, section .palmaresDerecha .numFin {
+    margin: 8.125rem 5.3125rem 0 -5.9375rem; }
+  section .palmaresIzquierda .imagenPan, section .palmaresDerecha .imagenPan {
+    padding: 1.25rem 4.625rem 1.25rem 3.125rem; }
+  section .palmaresIzquierda .numPan, section .palmaresDerecha .numPan {
+    margin: 7.8125rem 5.9375rem 0 -6.5625rem; }
+  section .palmaresIzquierda div, section .palmaresDerecha div {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: white;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    background-image: linear-gradient(90deg, rgb(172, 159, 57), rgb(0,0,0) 85%);
-    width: 100%;
-    height: 12.5rem;
-}
-.palmaresIzquierda div{
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: none;
+    display: flex;
     height: 10.3125rem;
     width: 37.5rem;
     overflow: auto;
-    padding: 0 .9375rem;
-}
-.textoMun:before{
-    content: attr(data-desktoptext);
-    font-size: 20px;
-    width: 34.375rem;
-    text-align: left;
-}
-.textoFin:before{
-    content: attr(data-desktoptext);
-    font-size: 20px;
-    width: 34.375rem;
-    text-align: left;
-}
-.textoPan:before{
-    content: attr(data-desktoptext);
-    font-size: 20px;
-    width: 34.375rem;
-    text-align: left;
-}
-.palmaresDerecha{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-start;
-    color: white;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    background-image: linear-gradient(270deg, rgb(172, 159, 57), rgb(0,0,0) 85%);
-    width: 100%;
-    height: 13.75rem;
-}
-.palmaresDerecha div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 11.875rem;
-    width: 34.375rem;
-    overflow: auto;
-    padding: 0 .9375rem;
-}
-.textoCa:before{
-    content: attr(data-desktoptext);
-    width: 34.375rem;
-    font-size: 20px;
-    text-align: left;
-}
-.textoConf:before{
-    content: attr(data-desktoptext);
-    width: 34.375rem;
-    font-size: 20px;
-    text-align: left;
-}
-.imagenMundial{
-    padding: 1.25rem 5rem 1.25rem 3.125rem;
-    width: auto;
-    height: 100%;
-    border-right: 2px solid black;
-}
-.imagenCa{
+    padding: 0 .9375rem; }
+    section .palmaresIzquierda div .textoMun:before, section .palmaresDerecha div .textoMun:before, section .palmaresIzquierda div .textoFin:before, section .palmaresDerecha div .textoFin:before, section .palmaresIzquierda div .textoPan:before, section .palmaresDerecha div .textoPan:before, section .palmaresDerecha div .textoCa:before, section .palmaresDerecha div .textoConf:before {
+      content: attr(data-desktoptext);
+      font-size: 20px;
+      width: 34.375rem;
+      text-align: left; }
+
+section .palmaresDerecha {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  gap: none;
+  background-image: linear-gradient(270deg, #ac9f39, black 85%);
+  height: 13.75rem; }
+  section .palmaresDerecha .imagenCa, section .palmaresDerecha .imagenConf {
     padding: 1.25rem 3.125rem 1.25rem 5rem;
-    width: auto;
-    height: 100%;
-    border-left: 2px solid black;
     z-index: 1;
-}
-.imagenFinalissima{
-    padding: 1.25rem 3.75rem 1.25rem 3.125rem;
-    width: auto;
-    height: 100%;
-    border-right: 2px solid black;
-}
-.imagenConf{
-    padding: 2.5rem 3.125rem 2.5rem 6.875rem;
-    width: auto;
-    height: 100%;
-    border-left: 2px solid black;
-    z-index: 1;
-}
-.imagenPan{
-    padding: 1.25rem 4.625rem 1.25rem 3.125rem;
-    width: auto;
-    height: 100%;
-    border-right: 2px solid black;
-}
-/*CSS página Plantel*/
-.subPlantel{
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-}
-.carousel-inner{
-    width: 100%;
-    height: 25rem;
-}
-.carousel-item{
-    height: 100%;
-    width: 100%;
-}
-.posicionamiento{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    height: 100%;
-    margin-bottom: 3.75rem;
-}
-.carousel-caption ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 37.5625rem;
-    padding: 0;
-    margin-bottom: -2.5rem;
-    color: white;
-}
-.carousel-indicators{
-    margin-bottom: -1.875rem;
-}
-ul h3{
-    padding-top: .9375rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-ul p{
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-.carousel-control-next{
-    margin-right: 2.5rem;
-}
-.carousel-control-prev{
-    margin-left: 2.5rem;
-}
-/* Fotos de jugadores */
-.imagenCar{
-    width: auto;
-    height: 100%;
-}
-.imagenCar2{
-    width: 43.75rem;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-.imagenCar3{
-    width: 43.75rem;
-    height: auto;
-    margin-bottom: -11.875rem;
-    padding: 0;
-}
-.armani ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.75rem;
-    padding: 0;
-    margin-top: -3.75rem;
-    color: white;
-    text-align: center;
-}
-.musso ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 44.5625rem;
-    padding: 0;
-    margin-top: -5.8125rem;
-    color: white;
-    text-align: center;
-}
-.montiel ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.75rem;
-    padding: 0;
-    margin-top: -25rem;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-}
-.cuti ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 702px;
-    padding: 0;
-    margin-top: -1.625rem;
-    color: white;
-    text-align: center;
-}
-.ota ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.875rem;
-    padding: 0;
-    margin-top: 1.5625rem;
-    color: white;
-    text-align: center;
-}
-.licha ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.75rem;
-    padding: 0;
-    margin-top: -1.6875rem;
-    color: white;
-    text-align: center;
-}
-.taglia ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.875rem;
-    padding: 0;
-    margin-top: 6.4375rem;
-    color: white;
-    text-align: center;
-}
-.acuna ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 37.1875rem;
-    padding: 0;
-    margin-top: -5.75rem;
-    color: white;
-    text-align: center;
-}
-.maca ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.75rem;
-    padding: 0;
-    margin-top: 3.75rem;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-}
-.paredes ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.875rem;
-    padding: 0;
-    margin-top: 6.25rem;
-    color: white;
-    text-align: center;
-}
-.gio ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.75rem;
-    padding: 0;
-    margin-top: 0;
-    color: white;
-    text-align: center;
-}
-.depaul ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.75rem;
-    padding: 0;
-    margin-top: 1.875rem;
-    color: white;
-    text-align: center;
-}
-.leomessi ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.75rem;
-    padding: 0;
-    margin-top: -5.8125rem;
-    color: white;
-    text-align: center;
-}
-.julian ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.875rem;
-    padding: 0;
-    margin-top: 5.625rem;
-    color: white;
-    text-align: center;
-}
-.dybala ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.75rem;
-    padding: 0;
-    margin-top: 73px;
-    color: white;
-    text-align: center;
-}
-.scalo ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 44.5rem;
-    padding: 0;
-    margin-top: -5.75rem;
-    color: white;
-    text-align: center;
-}
-.samu ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 43.8125rem;
-    padding: 0;
-    margin-top: -5.8125rem;
-    color: white;
-    text-align: center;
-}
-.ayala ul{
-    list-style: none;
-    background-color: #2c2a2a;
-    width: 44.5625rem;
-    padding: 0;
-    margin-top: -5.8125rem;
-    color: white;
-    text-align: center;
-}
-/*CSS página clásicos*/
-.clasRiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-.clasRiv img{
-    box-shadow: 4px 4px 5px #00F4FF;
-    margin-bottom: 1.875rem;
-}
-.pargBr{
-    width: 70%;
-    height: 14.375rem;
-    background-color: #1A1A1A;
-    font-size: 20px;
-    margin-bottom: 40px;
-    padding: 1.25rem 1.25rem;
-    box-shadow: 2px 2px 2px white;
-    overflow: auto;
-}
-.pargUru{
-    width: 70%;
-    height: 18.125rem;
-    background-color: #1A1A1A;
-    font-size: 20px;
-    margin-bottom: 2.5rem;
-    padding: 1.5625rem 1.5625rem;
-    padding-top: 20px;
-    box-shadow: 2px 2px 2px white;
-    overflow: auto;
-}
-.pargIng{
-    width: 70%;
-    height: 18.25rem;
-    background-color: #1A1A1A;
-    font-size: 20px;
-    margin-bottom: 40px;
-    padding: 1.5625rem 1.875rem;
-    padding-top: 20px;
-    box-shadow: 2px 2px 2px white;
-    overflow: auto;
-}
-.pargAl{
-    width: 70%;
-    height: 13.5625rem;
-    background-color: #1A1A1A;
-    font-size: 20px;
-    margin-bottom: 40px;
-    padding: 1.5625rem 1.5625rem;
-    box-shadow: 2px 2px 2px white;
-    overflow: auto;
-}
-.pargHol{
-    width: 70%;
-    height: 16.875rem;
-    background-color: #1A1A1A;
-    font-size: 20px;
-    margin-bottom: 1.25rem;
-    padding: 1.5625rem 1.875rem;
-    box-shadow: 2px 2px 2px white;
-    overflow: auto;
-}
-.subClas h2, .subClas h3{
+    border-left: 2px solid black; }
+  section .palmaresDerecha .numCa, section .palmaresDerecha .numConf {
+    margin: 9.0625rem -7.1875rem 0 5.625rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding-top: .375rem;
+    box-shadow: -3px 3px 4px white;
+    z-index: 2; }
+  section .palmaresDerecha .imagenConf {
+    padding: 2.5rem 3.125rem 2.5rem 6.875rem; }
+  section .palmaresDerecha .numConf {
+    margin: 6.875rem -8.4375rem 0 7.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: .125rem;
+    z-index: 2; }
+  section .palmaresDerecha div {
+    height: 11.875rem;
+    width: 34.375rem; }
+
+/*plantel*/
+.subPlantel {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center; }
+
+/*clasicos*/
+.clasRiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  display: flex;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; }
+  .clasRiv .subClas h2, .clasRiv .subClas h3 {
     color: white;
     font-size: 30px;
     text-align: center;
@@ -816,158 +398,162 @@ ul p{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    margin-bottom: -50px;
-}
-.rivTitle{
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-    background-color: #002021;
-    padding: 1.25rem;
-    margin-top: .625rem;
-    margin-bottom: 2.5rem;
-}
-.imgClas{
+    margin-bottom: -3.125rem; }
+  .clasRiv .imgClas, .clasRiv .imgArgal {
     width: 58%;
     height: auto;
-}
-.imgArgal{
-    width: 51%;
-    height: auto;
-}
-/*CSS página Contacto*/
-input:hover{
-    background-color: rgb(172, 159, 57);
-    color: black;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    transition: all .5s;
-}
-input:focus::-webkit-input-placeholder{
-    opacity: 0;
-}
-input:focus{
-    padding-right: .3125rem;
-    color: white;
-    background-color: #2c2a2a;
-}
-input:hover::placeholder{
-    color: black;
-    font-weight: 600;
-}
-::placeholder{
-    color: white;
-    padding: .3125rem;
-}
-input{
-    background-color: #2c2a2a;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    border: none;
-    outline: none;
-}
-.contactPage{
-    display: flex;
-    flex-direction: column;
-    gap: 3.125rem;
-}
-.formulario{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 80px;
-}
-.contact p{
+    box-shadow: 4px 4px 5px #00F4FF;
+    margin-bottom: 1.875rem; }
+  .clasRiv .imgArgal {
+    width: 51%; }
+  .clasRiv .pargBr, .clasRiv .pargUru, .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
+    width: 70%;
+    height: 12.5rem;
+    background-color: #1A1A1A;
+    font-size: 20px;
+    margin-bottom: 2.5rem;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    box-shadow: 2px 2px 2px white;
+    overflow: auto; }
+  .clasRiv .pargUru, .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
+    height: 18.125rem;
+    padding: 1.25rem 1.5625rem 1.5625rem 1.5625rem; }
+  .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
+    height: 16.25rem;
+    padding: 1.25rem 1.875rem 1.25rem 1.875rem; }
+  .clasRiv .pargAl {
+    height: 13.5625rem;
+    padding: 1.5625rem 1.5625rem; }
+  .clasRiv .pargHol {
+    height: 15rem;
+    margin-bottom: 1.25rem;
+    padding: 1.5625rem 1.875rem 1.25rem 1.875rem; }
+
+.rivTitle {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  background-color: #002021;
+  padding: 1.25rem;
+  margin: .625rem 0 2.5rem 0; }
+
+/*contacto*/
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 3.125rem;
+  display: flex; }
+  .contactPage .contact p, .contactPage .contact h1 span::selection, h1 .contactPage .contact span::selection, .contactPage .contact h1::selection, .contactPage .contact h2::selection, .contactPage .contact h3::selection, .contactPage .contact .tituloColor::selection, .contactPage .contact .refran::selection, .contactPage .contact a::selection {
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
     width: 37.5rem;
-    margin-left: 2.5rem;
+    padding-left: 2.8125rem;
     margin-top: 3.75rem;
-}
-.form{
+    text-align: left; }
+  .contactPage .formulario {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Nunito", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: white;
-    text-transform: capitalize;
-    width: 30%;
-    gap: .625rem;
-    margin-top: 3.125rem;
-}
-.bot{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    border: none;
-    width: 25%;
-    padding: .5rem 0;
-    margin-top: .4375rem;
-    color: white;
-}
-.nomb{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    width: 100%;
-    padding: .625rem .3125rem .625rem .3125rem;
-    color: white;
-}
-.e-mail{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    padding: .625rem .3125rem .625rem .3125rem;
-    width: 100%;
-    color: white;
-}
-.message{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    width: 100%;
-    padding: .3125rem .3125rem 9.375rem .3125rem;
-    color: white;
-}
-.logoContact{
-    width: auto;
-    height: 25rem;
-}
-@media (max-width: 768px){
-    /* header */
-    .burger{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: none;
+    gap: none;
+    display: flex;
+    padding-bottom: 5rem; }
+    .contactPage .formulario .logoContact {
+      width: auto;
+      height: 25rem; }
+    .contactPage .formulario .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: 0.625rem;
+      display: flex;
+      font-family: "Nunito", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      color: white;
+      text-transform: capitalize;
+      width: 30%;
+      gap: .625rem;
+      margin-top: 3.125rem; }
+      .contactPage .formulario .form .nomb, .contactPage .formulario .form .e-mail, .contactPage .formulario .form .message, .contactPage .formulario .form .bot, .contactPage .formulario .form input {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        width: 100%;
+        padding: .625rem .3125rem .625rem .3125rem;
+        color: white; }
+      .contactPage .formulario .form .message {
+        padding: .3125rem .3125rem 9.375rem .3125rem; }
+      .contactPage .formulario .form .bot {
+        border: none;
+        width: 25%;
+        padding: .5rem 0;
+        margin-top: .4375rem; }
+      .contactPage .formulario .form input {
+        background-color: #2c2a2a;
+        border: none;
+        outline: none; }
+        .contactPage .formulario .form input:hover {
+          background-color: #ac9f39;
+          color: black;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-style: normal;
+          transition: all .5s; }
+        .contactPage .formulario .form input:focus {
+          padding-right: .3125rem;
+          color: white;
+          background-color: #2c2a2a; }
+        .contactPage .formulario .form input:hover::placeholder {
+          color: black;
+          font-weight: 600; }
+        .contactPage .formulario .form input:focus::-webkit-input-placeholder {
+          opacity: 0; }
+      .contactPage .formulario .form ::placeholder {
+        color: white;
+        padding: .3125rem; }
+
+/*Media 768*/
+@media (max-width: 768px) {
+  body .header {
+    height: 3.125rem; }
+    body .header .navBar {
+      display: flex;
+      flex-direction: none;
+      justify-content: space-between;
+      align-items: center;
+      gap: none;
+      flex-wrap: wrap;
+      position: relative;
+      width: 100%;
+      padding: 0 1.25rem; }
+      body .header .navBar .logo {
+        padding: 0;
+        margin: 0; }
+      body .header .navBar .burger {
         display: block;
         height: 79%;
-        margin-right: -10px;
-        cursor: pointer;
-    }
-    .header{
-        height: 50px;
-    }
-    .navBar{
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        position: relative;
-        width: 100%;
-        padding: 0 20px;
-    }
-    .ul-links{
+        margin-right: -0.625rem;
+        cursor: pointer; }
+      body .header .navBar .ul-links {
         display: flex;
+        flex-direction: none;
         justify-content: center;
+        align-items: none;
+        gap: none;
+        display: flex;
         background-image: url(../assets/img/desenfocada.png);
-        background-position: center ;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -977,347 +563,455 @@ input{
         overflow: hidden;
         flex-direction: column;
         right: 0;
-        transition: all .3s;
-    }
-    .menu-hamburguesa:checked + .ul-links{
-        height: calc(100vh - 3.125rem);
-    }
-    .link:active{
-        color: #00F4FF;
-        text-decoration: underline;
-    }
-    .link{
-        color: white;
-    }
-    .logo{
-        padding: 0;
-        margin: 0;
-    }
-    .tituloPages{
-        height: auto;
-    }
-    .titPag{
-        padding: 15px 0;
-        font-size: 20px;
-        font-weight: 500;
+        transition: all .3s; }
+        body .header .navBar .ul-links li .link {
+          color: white; }
+          body .header .navBar .ul-links li .link:active {
+            color: #00F4FF;
+            text-decoration: underline; }
+      body .header .navBar .menu-hamburguesa:checked + .ul-links {
+        height: calc(100vh - 3.125rem); }
+  body main section .tituloPages, body main section .titContact {
+    height: auto; }
+    body main section .tituloPages .titPag, body main section .titContact .titPag {
+      padding: .9375rem 0;
+      font-size: 20px;
+      font-weight: 500;
+      width: 80%; }
+  body footer {
+    height: auto; }
+    body footer div {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: none;
+      gap: none; }
+    body footer .redes {
+      display: flex;
+      flex-direction: none;
+      justify-content: none;
+      align-items: none;
+      gap: 0.625rem;
+      padding: 0;
+      margin-right: .625rem;
+      padding-bottom: 1.875rem; }
+      body footer .redes img {
         width: 80%;
-    }
-    .footerPages{
-        height: auto;
-    }
-    .footerPages .redes{
-        padding: 20px 0 15px 0;
-    }
-    /*index*/
-    .indexLogo img{
-        width: 120px;
-        height: auto;
-    }
-    .indexLogo p{
-        width: 60%;
-        font-size: 18px;
-        margin-top: -20px;
-        line-height: 1.1em;
-    }
-    .refran{
-        font-size: 18px;
-    }
-    .tituloIndex{
-        margin-top: -40px;
-        height: auto;
-    }
-    .tit{
-        padding: 20px 0;
-        font-size: 20px;
-        font-weight: 500;
-        width: 80%;
-    }
-    .historicos{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .historicos h2{
-        font-size: 22px;
-        width: 80%;
-        line-height: 1.2em;
-    }
-    .jugHist{
-        /* grid-template-rows: repeat(6, 200px); */
-        display: flex;
-        flex-direction: column;
-        gap: 4.375rem;
-    }
-    .maradona{
-        /* estas columnas y filas las comenté en el momento que consulté si había que utilizar grid en todas
-        las medidas o era suficiente con usarla en una */
-        /* grid-column: 2/3;
-        grid-row: 3/5; */
-        margin: 0;
-        width: 28%;
-        height: auto;
+        height: auto; }
+    body footer .derechosAutor {
+      display: flex;
+      flex-direction: none;
+      justify-content: center;
+      align-items: center;
+      gap: none;
+      margin-right: -1rem;
+      padding-bottom: .625rem; }
+      body footer .derechosAutor p, body footer .derechosAutor h1 span::selection, h1 body footer .derechosAutor span::selection, body footer .derechosAutor h1::selection, body footer .derechosAutor h2::selection, body footer .derechosAutor .clasRiv .subClas h3::selection, .clasRiv .subClas body footer .derechosAutor h3::selection, body footer .derechosAutor h3::selection, body footer .derechosAutor .tituloColor::selection, body footer .derechosAutor .refran::selection, body footer .derechosAutor a::selection {
         text-align: center;
-        order: 2;
-    }
-    .messi{
-        /* grid-row: 1/3;*/
-        margin: 0;
-        width: 28%;
-        height: auto;
-        text-align: center;
-        order: 1;
-    }
-    .diStefano{
-        /* grid-column: 2/3;
-        grid-row: 5/6; */
-        margin: 0;
-        width: 28%;
-        height: auto;
-        text-align: center;
-        order: 3;
-    }
-    .nombres{
-        font-size: 20px;
-        line-height: 1.1em;
-    }
-    .palmaresIndex{
-        display: none;
-    }
-    footer{
-        height: auto;
-    }
-    footer div{
-        flex-direction: column;
-    }
-    .somosMontiel{
-        font-size: 24px;
-        padding-top: 10px;
-        padding-bottom: 30px;
-    }
-    .redes{
-        gap: 10px;
-        padding: 0;
-        margin-right: 10px;
-        padding-bottom: 30px;
-    }
-    .redes img{
-        width: 80%;
-        height: auto;
-    }
-    .derechosAutor{
-        justify-content: center;
-        align-items: center;
-        margin-right: -16px;
-        padding-bottom: 10px;
-    }
-    .derechosAutor p{
-        text-align: center;
-        font-size: 12px;
-    }
-    /*palmares*/
-    .textoPan:before{
+        font-size: 12px; }
+  body .footerPages {
+    height: auto; }
+    body .footerPages .redes {
+      padding: 1.25rem 0 .9375rem 0; }
+  .indexLogo img {
+    width: 7.5rem;
+    height: auto; }
+  .indexLogo p, .indexLogo h1 span::selection, h1 .indexLogo span::selection, .indexLogo h1::selection, .indexLogo h2::selection, .indexLogo .clasRiv .subClas h3::selection, .clasRiv .subClas .indexLogo h3::selection, .indexLogo h3::selection, .indexLogo .tituloColor::selection, .indexLogo .refran::selection, .indexLogo a::selection {
+    width: 60%;
+    font-size: 18px;
+    margin-top: -1.25rem;
+    line-height: 1.1em; }
+  .indexLogo .refran {
+    font-size: 18px; }
+  section .tituloIndex {
+    margin-top: -2.5rem;
+    height: auto; }
+    section .tituloIndex .tit {
+      padding: 1.25rem 0;
+      font-size: 20px;
+      font-weight: 500;
+      width: 80%; }
+  section .historicos {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    gap: none;
+    display: flex;
+    width: 100%;
+    margin-bottom: 3.125rem; }
+    section .historicos h2, section .historicos .clasRiv .subClas h3, .clasRiv .subClas section .historicos h3 {
+      font-size: 22px;
+      width: 80%;
+      line-height: 1.2em; }
+  section .jugHist {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    gap: 4.375rem;
+    display: flex; }
+    section .jugHist .nombres {
+      font-size: 20px;
+      line-height: 1.1em; }
+    section .jugHist .maradona, section .jugHist .messi, section .jugHist .diStefano {
+      margin: 0;
+      width: 28%;
+      height: auto;
+      text-align: center;
+      order: 2; }
+    section .jugHist .messi {
+      margin: 0;
+      width: 28%;
+      height: auto;
+      text-align: center;
+      order: 1; }
+    section .jugHist .diStefano {
+      margin: 0;
+      width: 28%;
+      height: auto;
+      text-align: center;
+      order: 3; }
+  .palmaresIndex {
+    display: none; }
+  .somosMontiel {
+    font-size: 24px;
+    padding-top: .625rem;
+    padding-bottom: 1.875rem; }
+  body footer div .derechosAutor p, body footer div .derechosAutor h1 span::selection, h1 body footer div .derechosAutor span::selection, body footer div .derechosAutor h1::selection, body footer div .derechosAutor h2::selection, body footer div .derechosAutor .clasRiv .subClas h3::selection, .clasRiv .subClas body footer div .derechosAutor h3::selection, body footer div .derechosAutor h3::selection, body footer div .derechosAutor .tituloColor::selection, body footer div .derechosAutor .refran::selection, body footer div .derechosAutor a::selection {
+    padding-right: 0; }
+  section .palmaresIzquierda, section .palmaresDerecha {
+    height: 9.375rem;
+    background-image: linear-gradient(90deg, #ac9f39, black 90%); }
+    section .palmaresIzquierda .imagenMundial, section .palmaresDerecha .imagenMundial, section .palmaresIzquierda .imagenFinalissima, section .palmaresDerecha .imagenFinalissima, section .palmaresIzquierda .imagenPan, section .palmaresDerecha .imagenPan, section .palmaresDerecha .imagenCa, section .palmaresDerecha .imagenConf {
+      padding-right: 3.125rem; }
+    section .palmaresIzquierda .munNum, section .palmaresDerecha .munNum, section .palmaresIzquierda .numFin, section .palmaresDerecha .numFin, section .palmaresIzquierda .numPan, section .palmaresDerecha .numPan, section .palmaresDerecha .numCa, section .palmaresDerecha .numConf {
+      margin: 6.25rem 4.6875rem 0 -5rem;
+      width: 2.1875rem;
+      height: 2.1875rem;
+      padding-top: 0; }
+    section .palmaresIzquierda .imagenFinalissima, section .palmaresDerecha .imagenFinalissima {
+      padding: 1.25rem 2.5rem 1.25rem 2.8125rem; }
+    section .palmaresIzquierda .numFin, section .palmaresDerecha .numFin {
+      margin: 5.625rem 4.5rem 0 -4.875rem;
+      width: 2.1875rem;
+      height: 2.1875rem;
+      padding: 0; }
+    section .palmaresIzquierda .imagenPan, section .palmaresDerecha .imagenPan {
+      padding: 1.25rem 2.8125rem 1.25rem 3.125rem; }
+    section .palmaresIzquierda .numPan, section .palmaresDerecha .numPan {
+      margin: 5.625rem 4.25rem 0 -4.6875rem;
+      width: 2.1875rem;
+      height: 2.1875rem;
+      padding-top: 0; }
+    section .palmaresIzquierda div, section .palmaresDerecha div {
+      display: flex;
+      flex-direction: none;
+      justify-content: flex-start;
+      align-items: none;
+      gap: none;
+      width: 6.25rem;
+      line-height: 2.5rem;
+      padding: 0; }
+      section .palmaresIzquierda div .textoMun:before, section .palmaresDerecha div .textoMun:before, section .palmaresIzquierda div .textoFin:before, section .palmaresDerecha div .textoFin:before, section .palmaresIzquierda div .textoPan:before, section .palmaresDerecha div .textoPan:before, section .palmaresDerecha div .textoCa:before, section .palmaresDerecha div .textoConf:before {
+        content: attr(data-tablettext); }
+      section .palmaresIzquierda div .textoFin:before, section .palmaresDerecha div .textoFin:before {
+        content: attr(data-tablettext); }
+      section .palmaresIzquierda div .textoPan:before, section .palmaresDerecha div .textoPan:before {
+        content: attr(data-tablettext); }
+  section .palmaresDerecha {
+    height: 9.375rem;
+    background-image: linear-gradient(270deg, #ac9f39, black 90%); }
+    section .palmaresDerecha .imagenConf {
+      padding: 1.25rem 4.375rem 1.25rem 4.25rem; }
+    section .palmaresDerecha .numConf {
+      margin: 5.625rem -5.625rem 0 4.0625rem;
+      background-color: rgba(0, 0, 0, 0.788);
+      width: 2.1875rem;
+      height: 2.1875rem;
+      padding-top: 0; }
+    section .palmaresDerecha div {
+      display: flex;
+      flex-direction: none;
+      justify-content: flex-end;
+      align-items: none;
+      gap: none;
+      width: 6.25rem;
+      height: 6.25rem;
+      line-height: 2.5rem;
+      overflow-x: scroll; }
+      section .palmaresDerecha div .textoConf:before {
+        content: attr(data-tablettext); }
+  section .copam {
+    height: 13.75rem; }
+    section .copam .imagenCa, section .copam .palmaresDerecha .imagenConf, section .palmaresDerecha .copam .imagenConf {
+      padding: 1.25rem 3.125rem 1.25rem 3.125rem; }
+    section .copam .numCa, section .copam .palmaresDerecha .numConf, section .palmaresDerecha .copam .numConf {
+      font-size: 20px;
+      margin: 9.375rem -5rem 0 2.8125rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      padding-top: .3125rem; }
+    section .copam .div {
+      height: 12.5rem;
+      width: 25rem;
+      padding: 0 15px; }
+      section .copam .div .textoCa:before {
         content: attr(data-tablettext);
-    }
-    .textoConf:before{
-        content: attr(data-tablettext);
-    }
-    .textoFin:before{
-        content: attr(data-tablettext);
-    }
-    .textoMun:before{
-        content: attr(data-tablettext);
-    }
-    .textoCa:before{
-        content: attr(data-tablettext);
-        text-align: center;
-    }
-    .palmaresIzquierda{
-        height: 150px;
-        background-image: linear-gradient(90deg, rgb(172, 159, 57), rgb(0,0,0) 90%);
-    }
-    .palmaresDerecha{
-        height: 150px;
-        background-image: linear-gradient(270deg, rgb(172, 159, 57), rgb(0,0,0) 90%);
-    }
-    .palmaresIzquierda div{
-        justify-content: flex-start;
-        width: 100px;
-        line-height: 40px;
-        padding: 0;
-    }
-    .palmaresDerecha div{
-        justify-content: flex-end;
-        width: 100px;
-        height: 100px;
-        line-height: 40px;
-        overflow-x: scroll;
-    }
-    .copam{
-        height: 220px;
-    }
-    .copam div{
-        height: 150px;
-        width: 400px;
-    }
-    .munNum{
-        margin: 100px 75px 0 -80px;
-        width: 35px;
-        height: 35px;
-        padding-top: 0;
-    }
-    .numCa{
-        font-size: 20px;
-        margin: 150px -80px 0 45px;
-        width: 40px;
-        height: 40px;
-        padding-top: 5px;
-    }
-    .numFin{
-        margin: 90px 72px 0 -78px;
-        width: 35px;
-        height: 35px;
-        padding: 0;
-    }
-    .numConf{
-        margin: 90px -90px 0 65px;
-        background-color: rgba(0, 0, 0, 0.788);
-        width: 35px;
-        height: 35px;
-        padding-top: 0;
-    }
-    .numPan{
-        margin: 90px 68px 0 -75px;
-        width: 35px;
-        height: 35px;
-        padding-top: 0;
-    }
-    .imagenMundial{
-        padding-right: 50px;
-    }
-    .imagenCa{
-        padding: 1.25rem 3.125rem 1.25rem 50px;
-    }
-    .imagenFinalissima{
-        padding: 1.25rem 40px 1.25rem 45px;
-    }
-    .imagenConf{
-        padding: 20px 70px 20px 68px;
-    }
-    .imagenPan{
-        padding: 1.25rem 45px 1.25rem 3.125rem;
-    }
-    /*plantel*/
-    .musso ul{
-        margin-top: -88px;
-    }
-    .montiel ul{
-        margin-top: -420;
-        padding-bottom: 7px;
-    }
-    .cuti ul, .ota ul, .licha ul, .acuna ul, .maca ul, .depaul ul, .leomessi ul, .scalo ul, .samu ul, .ayala ul, .dybala ul{
-        padding-bottom: 5px;
-    }
-    /* clasicos */
-    .subClas{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .subClas h2, .subClas h3{
-        font-size: 18px;
-        width: 80%;
-        line-height: 1.2em;
-    }
-    /* contacto */
-    .logoContact{
-        display: none;
-    }
-    .contact{
-        width: 100%;
-        height: auto;
-    }
-    .contact p{
-        width: 85%;
-    }
-    .form{
-        width: 100%;
-        height: auto;
-    }
-    .nomb, .message, .e-mail{
-        width: 45%;
-        height: auto;
-    }
-    .nomb:active{
-        background-color: rgb(172, 159, 57);
-        transition: all .5s;
-    }
-    .message:active{
-        background-color: rgb(172, 159, 57);
-        transition: all .5s;
-    }
-    .e-mail:active{
-        background-color: rgb(172, 159, 57);
-        transition: all .5s;
-    }
-}
-/* Estos media queries no son pedidos pero no lograba acomodar el texto, no aparecía completo dentro del contenedor
-y si utilizaba mucho padding top se empezaba a sobreslair. También intenté con z-index, intenté poner un overflow-x: scroll
-pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
-@media (max-width: 457px){
-    .copam div .textoCa:before{
-        padding: 0;
-        font-size: 16px;
-    }
-    .copam div{
-        height: 180px;
-        padding-top: 0;
-    }
-}
-@media (max-width: 360px){
-    .copam div{
-        padding-top: 120px;
-    }
-}
+        text-align: center; }
+  .clasRiv .subClas {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    gap: none;
+    display: flex;
+    width: 100%; }
+    .clasRiv .subClas h2, .clasRiv .subClas h3 {
+      font-size: 18px;
+      width: 80%;
+      line-height: 1.2em; }
+    .clasRiv .subClas h3 {
+      font-size: 18px;
+      width: 80%;
+      line-height: 1.2em; }
+  .contactPage .contact {
+    width: 100%;
+    height: auto; }
+    .contactPage .contact p, .contactPage .contact h1 span::selection, h1 .contactPage .contact span::selection, .contactPage .contact h1::selection, .contactPage .contact h2::selection, .contactPage .contact h3::selection, .contactPage .contact .tituloColor::selection, .contactPage .contact .refran::selection, .contactPage .contact a::selection {
+      width: 85%; }
+  .contactPage .formulario .logoContact {
+    display: none; }
+  .contactPage .formulario .form {
+    width: 100%;
+    height: auto; }
+    .contactPage .formulario .form .nomb, .contactPage .formulario .form .e-mail, .contactPage .formulario .form .message, .contactPage .formulario .form .bot, .contactPage .formulario .form input {
+      width: 45%;
+      height: auto; }
+      .contactPage .formulario .form .nomb:active, .contactPage .formulario .form .e-mail:active, .contactPage .formulario .form .message:active, .contactPage .formulario .form .bot:active, .contactPage .formulario .form input:active {
+        background-color: #ac9f39;
+        transition: all .5s; }
+    .contactPage .formulario .form .e-mail {
+      width: 45%;
+      height: auto; }
+      .contactPage .formulario .form .e-mail:active {
+        background-color: #ac9f39;
+        transition: all .5s; }
+    .contactPage .formulario .form .message {
+      width: 45%;
+      height: auto; }
+      .contactPage .formulario .form .message:active {
+        background-color: #ac9f39;
+        transition: all .5s; } }
 
-@media (max-width: 320px){
-    /*header*/
-    .burger{
-        margin-right: -10px;
-    }
-    .ul-links{
-        background-image: url(../assets/img/a.png);
-    }
-    /* index */
-    .indexLogo{
-        margin-top: -20px;
-    }
-    .indexLogo p{
-        width: 183px;
-    }
-    .indexLogo img{
-        margin: 0;
-        width: 120px;
+/* Estos media queries no son pedidos pero no lograba acomodar el texto, no aparecía completo dentro del contenedor
+y si utilizaba mucho padding top se empezaba a sobresalir. También intenté con z-index, intenté poner un overflow-x: scroll
+pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
+@media (max-width: 412px) {
+  .copam .div {
+    height: 200px;
+    padding-top: 0; }
+    .copam .div .textoCa:before {
+      padding: 0;
+      font-size: 1rem; } }
+
+@media (max-width: 352px) {
+  section .copam .div {
+    height: 11.25rem;
+    padding-top: 7.5rem; } }
+
+@media (max-width: 320px) {
+  body .header .navBar .burger {
+    margin-right: -10px; }
+  body .header .navBar .ul-links {
+    background-image: url(../assets/img/a.png); }
+  .indexLogo {
+    margin-top: -1.25rem; }
+    .indexLogo img {
+      margin: 0;
+      width: 120px;
+      height: auto; }
+    .indexLogo p, .indexLogo h1 span::selection, h1 .indexLogo span::selection, .indexLogo h1::selection, .indexLogo h2::selection, .indexLogo .clasRiv .subClas h3::selection, .clasRiv .subClas .indexLogo h3::selection, .indexLogo h3::selection, .indexLogo .tituloColor::selection, .indexLogo .refran::selection, .indexLogo a::selection {
+      width: 11.4375rem; }
+  .somosMontiel {
+    width: 90%;
+    line-height: 1.1em;
+    font-size: 20px; }
+  section .palmaresIzquierda, section .palmaresDerecha {
+    background-image: linear-gradient(90deg, #ac9f39, black 103%); }
+  section .palmaresDerecha {
+    background-image: linear-gradient(270deg, #ac9f39, black 103%); }
+  .clasRiv .pargBr, .clasRiv .pargUru, .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
+    font-size: 18px; }
+  .clasRiv .pargUru, .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
+    font-size: 18px; }
+  .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
+    font-size: 18px; }
+  .clasRiv .pargAl {
+    font-size: 18px; }
+  .clasRiv .pargHol {
+    font-size: 18px; }
+  .contactPage .contact p, .contactPage .contact h1 span::selection, h1 .contactPage .contact span::selection, .contactPage .contact h1::selection, .contactPage .contact h2::selection, .contactPage .contact h3::selection, .contactPage .contact .tituloColor::selection, .contactPage .contact .refran::selection, .contactPage .contact a::selection {
+    text-align: justify; } }
+
+/*Components*/
+.carousel-indicators {
+  margin-bottom: -1.875rem; }
+
+.carousel-control-next {
+  margin-right: 2.5rem; }
+
+.carousel-control-prev {
+  margin-left: 2.5rem; }
+
+.carousel-inner {
+  width: 100%;
+  height: 25rem; }
+  .carousel-inner .carousel-item {
+    height: 100%;
+    width: 100%; }
+    .carousel-inner .carousel-item .posicionamiento {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: none;
+      display: flex;
+      width: auto;
+      height: 100%;
+      margin-bottom: 3.75rem; }
+      .carousel-inner .carousel-item .posicionamiento .imagenCar {
+        width: auto;
+        height: 100%; }
+      .carousel-inner .carousel-item .posicionamiento .imagenCar2, .carousel-inner .carousel-item .posicionamiento .imagenCar3 {
+        width: 43.75rem;
         height: auto;
-    }
-    .somosMontiel{
-        width: 90%;
-        line-height: 1.1em;
-        font-size: 20px;
-    }
-    /* Palmares */
-    .palmaresIzquierda{
-        background-image: linear-gradient(90deg, rgb(172, 159, 57), rgb(0,0,0) 100%)
-    }
-    .palmaresDerecha{
-        background-image: linear-gradient(270deg, rgb(172, 159, 57), rgb(0,0,0) 100%);
-    }
-    /* plantel */
-    .dibuImg img{
-        padding-right: 190px;
-    }
-    /* clasicos */
-    .pargBr, .pargUru, .pargIng, .pargAl, .pargHol{
-        font-size: 18px
-    }
-}
+        margin: 0;
+        padding: 0; }
+      .carousel-inner .carousel-item .posicionamiento .imagenCar3 {
+        margin-bottom: -11.875rem; }
+      .carousel-inner .carousel-item .posicionamiento div ul {
+        list-style: none;
+        background-color: #2c2a2a;
+        color: white;
+        text-align: center; }
+        .carousel-inner .carousel-item .posicionamiento div ul li h3 {
+          padding-top: .9375rem;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          font-style: normal; }
+        .carousel-inner .carousel-item .posicionamiento div ul li p, .carousel-inner .carousel-item .posicionamiento div ul li h1 span::selection, h1 .carousel-inner .carousel-item .posicionamiento div ul li span::selection, .carousel-inner .carousel-item .posicionamiento div ul li h1::selection, .carousel-inner .carousel-item .posicionamiento div ul li h2::selection, .carousel-inner .carousel-item .posicionamiento div ul li h3::selection, .carousel-inner .carousel-item .posicionamiento div ul li .tituloColor::selection, .carousel-inner .carousel-item .posicionamiento div ul li .refran::selection, .carousel-inner .carousel-item .posicionamiento div ul li a::selection {
+          font-family: "Nunito", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal; }
+
+/*Jugadores*/
+.posicionamiento .carousel-caption ul {
+  padding-left: 0;
+  width: 37.5625rem;
+  margin-bottom: -2.5625rem; }
+
+.posicionamiento .armani ul {
+  padding-left: 0;
+  width: 43.75rem;
+  margin-top: -3.75rem; }
+
+.posicionamiento .musso ul {
+  padding-left: 0;
+  width: 44.5625rem;
+  margin-top: -5.5625rem; }
+
+.posicionamiento .montiel ul {
+  padding-left: 0;
+  width: 43.75rem;
+  padding-bottom: .4375rem;
+  margin-top: -25rem; }
+
+.posicionamiento .cuti ul {
+  padding-left: 0;
+  width: 43.875rem;
+  margin-top: 6.375rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .ota ul {
+  padding-left: 0;
+  width: 43.875rem;
+  margin-top: 1.5625rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .licha ul {
+  padding-left: 0;
+  width: 43.75rem;
+  margin-top: -1.6875rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .taglia ul {
+  padding-left: 0;
+  width: 43.875rem;
+  margin-top: 6.4375rem; }
+
+.posicionamiento .acuna ul {
+  padding-left: 0;
+  width: 37.1875rem;
+  margin-top: -5.75rem;
+  padding-bottom: .9375rem; }
+
+.posicionamiento .maca ul {
+  padding-left: 0;
+  width: 43.75rem;
+  margin-top: 3.75rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .paredes ul {
+  padding-left: 0;
+  width: 43.875rem;
+  margin-top: 6.25rem;
+  padding-bottom: .3125rem; }
+
+.posicionamiento .gio ul {
+  padding-left: 0;
+  width: 43.75rem;
+  padding-bottom: .3125rem; }
+
+.posicionamiento .depaul ul {
+  padding-left: 0;
+  width: 43.75rem;
+  margin-top: 1.875rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .leomessi ul {
+  padding-left: 0;
+  width: 43.75rem;
+  margin-top: -5.8125rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .julian ul {
+  padding-left: 0;
+  width: 43.875rem;
+  margin-top: 5.625rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .dybala ul {
+  padding-left: 0;
+  width: 43.75rem;
+  margin-top: 73px;
+  padding-bottom: .625rem; }
+
+.posicionamiento .scalo ul {
+  padding-left: 0;
+  width: 44.5rem;
+  margin-top: -5.75rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .samu ul {
+  padding-left: 0;
+  width: 43.8125rem;
+  margin-top: -5.8125rem;
+  padding-bottom: .625rem; }
+
+.posicionamiento .ayala ul {
+  padding-left: 0;
+  width: 44.5625rem;
+  margin-top: -5.8125rem;
+  padding-bottom: .625rem; }

@@ -1,0 +1,91 @@
+.contactPage{
+    @include flex(column, none, none, 3.125rem);
+    display: flex;
+    .contact{
+        p{
+            color: map-get($colores, textoPrimario);
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            width: 37.5rem;
+            padding-left: 2.8125rem;
+            margin-top: 3.75rem;
+            text-align: left;
+        }
+    }
+    .formulario{
+        width: 100%;
+        @include flex (row, space-around, none, none);
+        display: flex;
+        padding-bottom: 5rem;
+        .logoContact{
+            width: auto;
+            height: 25rem;
+        }
+        .form{
+            @include flex (column, none, center, .625rem);
+            display: flex;
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: map-get($colores, textoPrimario);
+            text-transform: capitalize;
+            width: 30%;
+            gap: .625rem;
+            margin-top: 3.125rem;
+            .nomb{
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                width: 100%;
+                padding: .625rem .3125rem .625rem .3125rem;
+                color: map-get($colores, textoPrimario);
+            }
+            .e-mail{
+                @extend .nomb;
+            }
+            .message{
+                @extend .nomb;
+                padding: .3125rem .3125rem 9.375rem .3125rem;
+            }
+            .bot{
+                @extend .nomb;
+                border: none;
+                width: 25%;
+                padding: .5rem 0;
+                margin-top: .4375rem;
+            }
+            input{
+                @extend .nomb;
+                background-color: $bgterciario;
+                border: none;
+                outline: none;
+                &:hover{
+                    background-color: map-get($colores, colorTerciario);
+                    color: black;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    transition: all .5s;
+                }
+                &:focus{
+                    padding-right: .3125rem;
+                    color: map-get($colores, textoPrimario);
+                    background-color: #2c2a2a;
+                }
+                &:hover::placeholder{
+                    color: $placehold;
+                    font-weight: 600;
+                }
+                &:focus::-webkit-input-placeholder{
+                    opacity: 0;
+                }
+            }
+            ::placeholder{
+                color: map-get($colores, textoPrimario);
+                padding: .3125rem;
+            }
+        }
+    }
+}

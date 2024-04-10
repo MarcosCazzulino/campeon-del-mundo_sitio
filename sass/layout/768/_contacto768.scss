@@ -1,0 +1,42 @@
+.contactPage{
+    .contact{
+        width: 100%;
+        height: auto;
+        p{
+            width: 85%;
+        }
+    }
+    .formulario{
+        .logoContact{
+            display: none;
+        }
+        .form{
+            width: 100%;
+            height: auto;
+            .nomb{
+                width: 45%;
+                height: auto;
+                &:active{
+                    background-color: map-get($colores, colorTerciario);
+                    transition: all .5s;
+                }
+            }
+            .e-mail{
+                width: 45%;
+                height: auto;
+                &:active{
+                    background-color: map-get($colores, colorTerciario);
+                    transition: all .5s;
+                }
+            }
+            .message{
+                width: 45%;
+                height: auto;
+                &:active{
+                    background-color: map-get($colores, colorTerciario);
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+}

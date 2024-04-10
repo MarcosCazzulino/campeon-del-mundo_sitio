@@ -1,0 +1,76 @@
+.clasRiv{
+    @include flex(column, center, center, none);
+    display: flex;
+    color: map-get($colores, textoPrimario);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    .subClas{
+        h2{
+            color: map-get($colores, textoPrimario);
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 4.375rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin-bottom: -3.125rem;
+        }
+        h3{
+            @extend h2;
+        }
+    }
+    .imgClas{
+        width: 58%;
+        height: auto;
+        box-shadow: 4px 4px 5px map-get($colores, textoSecundario);
+        margin-bottom: 1.875rem;
+    }
+    .imgArgal{
+        @extend .imgClas;
+        width: 51%;
+    }
+    .pargBr{
+        width: 70%;
+        height: 12.5rem;
+        background-color: map-get($colores, colorSecundario);
+        font-size: 20px;
+        margin-bottom: 2.5rem;
+        padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+        box-shadow: 2px 2px 2px $sombra;
+        overflow: auto;
+    }
+    .pargUru{
+        @extend .pargBr;
+        height: 18.125rem;
+        padding: 1.25rem 1.5625rem 1.5625rem 1.5625rem;
+    }
+    .pargIng{
+        @extend .pargUru;
+        height: 16.25rem;
+        padding: 1.25rem 1.875rem 1.25rem 1.875rem;
+    }
+    .pargAl{
+        @extend .pargIng;
+        height: 13.5625rem;
+        padding: 1.5625rem 1.5625rem;
+    }
+    .pargHol{
+        @extend .pargIng;
+        height: 15rem;
+        margin-bottom: 1.25rem;
+        padding: 1.5625rem 1.875rem 1.25rem 1.875rem;
+    }    
+}
+.rivTitle{
+    color: map-get($colores, textoPrimario);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    background-color: #002021;
+    padding: 1.25rem;
+    margin: .625rem 0 2.5rem 0;
+}

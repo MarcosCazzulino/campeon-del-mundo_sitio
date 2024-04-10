@@ -1,0 +1,17 @@
+.clasRiv{
+    .subClas{
+        @include flex(none, center, none, none);
+        display: flex;
+        width: 100%;
+        h2{
+            font-size: 18px;
+            width: 80%;
+            line-height: 1.2em;
+        }
+        h3{
+            font-size: 18px;
+            width: 80%;
+            line-height: 1.2em;
+        }
+    }
+}

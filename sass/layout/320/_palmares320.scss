@@ -1,0 +1,8 @@
+section{
+    .palmaresIzquierda{
+        background-image: linear-gradient(90deg, $degDorado, $degNegro 103%)
+    }
+    .palmaresDerecha{
+        background-image: linear-gradient(270deg, $degDorado, $degNegro 103%);
+    }
+}

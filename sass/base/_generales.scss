@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/*Pseudoclases y elementos*/
+p::selection{
+    background-color: map-get($colores, colorTerciario);
+    color: map-get($colores, textoPrimario);
+}
+h1 span::selection{
+    @extend p;
+}
+h1::selection{
+    @extend p;
+}
+h2::selection{
+    @extend p;
+}
+h3::selection{
+    @extend p;
+}
+.tituloColor::selection{
+    @extend p;
+}
+.refran::selection{
+    @extend p;
+}
+a::selection{
+    @extend p;
+}
+/*Body*/
+body{
+    width: 100%;
+    background-color: $backgroundpage;
+    .header{
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        height: 65px;
+        background-color: map-get($colores, colorSecundario);
+        nav{
+            @include flex(row,center,center,none);
+            display: flex;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            width: 100%;
+            height: 100%;
+            .logo{
+                width: 5%;
+                height: 100%;
+                padding-left: 30px;
+                img{
+                    padding-top: 4px;
+                    width: auto;
+                    height: 90%;
+                }
+            }
+            .burger{
+                display: none;
+            }
+            .menu-hamburguesa{
+                display: none;
+            }
+            ul{
+                @include flex(row,center,center,1.875rem);
+                display: flex;
+                text-decoration: none;
+                list-style-type: none;
+                width: 95%;
+                margin: 0;
+                padding: 0;
+                li{
+                    .marcada{
+                        color: map-get($colores, textoSecundario);
+                    }
+                    .link{
+                        color: map-get($colores, navText);
+                        &:hover{
+                            color: map-get($colores, textoSecundario);
+                            transition: all .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section{
+            .tituloPages{
+                @include flex(column,center,center,none);
+                display: flex;
+                width: 100%;
+                height: 8.75rem;
+                background-color: map-get($colores, colorSecundario);
+                padding: .625rem 0;
+                margin: 4.375rem 0;
+                & span{
+                    color: map-get($colores, textoSecundario);
+                }
+                .titPag{
+                    width: 100%;
+                    font-size: 40px;
+                }
+            }
+            .titContact{
+                @extend .tituloPages;
+                height: 6.25rem;
+            }
+        }
+    }
+    footer{
+        background-color: $bgsecundario;
+        @include flex(column, center, center, none);
+        display: flex;
+        height: 7.5rem;
+        div{
+            width: 100%;
+            @include flex(row, space-between, center, none);
+            display: flex;
+            .redes{
+                @include flex(row, center, none, none);
+                display: flex;
+                list-style-type: none;
+                gap: .9375rem;
+                padding-left: .9375rem;
+                margin: 0;
+            }
+            .derechosAutor{
+                @include flex(column, none, none, 0);
+                display: flex;
+                margin: 0;
+                padding: 0;
+                p{
+                    font-size: 13px;
+                    padding-right: 1.25rem;
+                    text-align: right;
+                    color: map-get($colores, textoPrimario);
+                    font-family: "Nunito", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 500;
+                    font-style: normal;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .footerPages{
+            height: 4.375rem;
+            margin-top: 1.25rem;
+            padding: 0;
+    }
+}
+h1{
+    color: map-get($colores, textoPrimario);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1em;
+}
+

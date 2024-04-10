@@ -1,0 +1,123 @@
+.indexLogo{
+    width: 100%;
+    @include flex(column, center, center, none);
+    display: flex;
+    padding-bottom: 6.25rem;
+    padding-top: 30px;
+    img{
+        padding-bottom: 3.75rem;
+        padding-top: 3.75rem;
+        width: 20%;
+        height: auto;
+    }
+    p{
+        font-size: 25px;
+        font-style: italic;
+        text-align: center;
+        color: map-get($colores, textoPrimario);
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+    }
+    .refran{
+        font-family: "Nunito", sans-serif;
+        font-weight: 550;
+        font-style: normal;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+section{
+    .tituloIndex{
+        @include flex(column, center, center, none);
+        display: flex;
+        background-color: map-get($colores, colorSecundario);
+        width: 100%;
+        height: 140px;
+        margin-bottom: 70px;
+        font-weight: 600;
+        & span{
+            color: map-get($colores, textoSecundario);
+        }
+        .tit{
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+    .historicos{
+        h2{
+            color: map-get($colores, textoPrimario);
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 4.375rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: uppercase;
+            margin-bottom: -4.375rem;
+        }
+    }
+    .jugHist{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 12.5rem);
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 5rem;
+        .nombres{
+            color: map-get($colores, textoPrimario);
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        .maradona{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            @include flex(column, center, center, .9375rem);
+            display: flex;
+            color: map-get($colores, textoPrimario);
+            width: 13.125rem;
+            height: 18.75rem;
+            margin-left: 1.875rem;
+            img{
+                width: 100%;
+                height: 100%;
+                border: 2px solid $bordeHistoricos;
+            }
+        }
+        .messi{
+            @extend .maradona;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            width: 15rem;
+            height: 30rem;
+            margin-right: .4375rem;
+            margin-left: 0;
+        }
+        .diStefano{
+            @extend .maradona;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            width: 13.75rem;
+            height: 20rem;
+            margin-right: 1.875rem;
+            margin-left: 0;
+        }
+    }
+}
+.palmaresIndex{
+    width: 100%;
+    padding-bottom: 4.6875rem;
+    h2{
+        color: map-get($colores, textoPrimario);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

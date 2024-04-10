@@ -1,0 +1,94 @@
+body{
+    .header{
+        height: 3.125rem;
+        .navBar{
+            @include flex(none, space-between, center, none);
+            flex-wrap: wrap;
+            position: relative;
+            width: 100%;
+            padding: 0 1.25rem;
+            .logo{
+                padding: 0;
+                margin: 0;
+            }
+            .burger{
+                display: block;
+                height: 79%;
+                margin-right: -0.625rem;
+                cursor: pointer;
+            }
+            .ul-links{
+                @include flex(none, center, none, none);
+                display: flex;
+                background-image: url(../assets/img/desenfocada.png);
+                background-position: center ;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                width: 100%;
+                top: 50px;
+                height: 0;
+                overflow: hidden;
+                flex-direction: column;
+                right: 0;
+                transition: all .3s;
+                li{
+                    .link{
+                        color: map-get($colores, textoPrimario);
+                        &:active{
+                            color: map-get($colores,  textoSecundario);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .menu-hamburguesa:checked + .ul-links{
+                height: calc(100vh - 3.125rem);
+            }
+        }
+    }
+    main{
+        section{
+            .tituloPages{
+                height: auto;
+                .titPag{
+                    padding: .9375rem 0;
+                    font-size: 20px;
+                    font-weight: 500;
+                    width: 80%;
+                }
+            }
+        }
+    }
+    footer{
+        height: auto;
+        div{
+            @include flex(column, none, none, none);
+        }
+        .redes{
+            @include flex(none, none, none, .625rem);
+            padding: 0;
+            margin-right: .625rem;
+            padding-bottom: 1.875rem;
+            img{
+                width: 80%;
+                height: auto;
+            }
+        }
+        .derechosAutor{
+            @include flex(none, center, center, none);
+            margin-right: -1rem;
+            padding-bottom: .625rem;
+            p{
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+    }
+    .footerPages{
+        height: auto;
+        .redes{
+            padding: 1.25rem 0 .9375rem 0;
+        }
+    }
+}
