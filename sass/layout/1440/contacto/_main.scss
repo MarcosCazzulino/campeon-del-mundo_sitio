@@ -3,7 +3,7 @@
     display: flex;
     .contact{
         p{
-            color: map-get($colores, textoPrimario);
+            color: map-get($texto, textoPrimario);
             font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -29,7 +29,7 @@
             font-family: "Nunito", sans-serif;
             font-weight: 500;
             font-style: normal;
-            color: map-get($colores, textoPrimario);
+            color: map-get($texto, textoPrimario);
             text-transform: capitalize;
             width: 30%;
             gap: .625rem;
@@ -40,7 +40,7 @@
                 font-style: normal;
                 width: 100%;
                 padding: .625rem .3125rem .625rem .3125rem;
-                color: map-get($colores, textoPrimario);
+                color: map-get($texto, textoPrimario);
             }
             .e-mail{
                 @extend .nomb;
@@ -58,12 +58,12 @@
             }
             input{
                 @extend .nomb;
-                background-color: $bgterciario;
+                background-color: map-get($form, backgroundcolor);
                 border: none;
                 outline: none;
                 &:hover{
-                    background-color: map-get($colores, colorTerciario);
-                    color: black;
+                    background-color: map-get($form, colorHover);
+                    color: map-get($texto, placeholder);
                     font-family: "Poppins", sans-serif;
                     font-weight: 600;
                     font-style: normal;
@@ -71,11 +71,11 @@
                 }
                 &:focus{
                     padding-right: .3125rem;
-                    color: map-get($colores, textoPrimario);
-                    background-color: #2c2a2a;
+                    color: map-get($texto, textoPrimario);
+                    background-color: map-get($form, backgroundcolor);
                 }
                 &:hover::placeholder{
-                    color: $placehold;
+                    color: map-get($texto, placeholder);
                     font-weight: 600;
                 }
                 &:focus::-webkit-input-placeholder{
@@ -83,7 +83,7 @@
                 }
             }
             ::placeholder{
-                color: map-get($colores, textoPrimario);
+                color: map-get($texto, textoPrimario);
                 padding: .3125rem;
             }
         }

@@ -36,8 +36,8 @@
             div{
                 ul{
                     list-style: none;
-                    background-color: $bgterciario;
-                    color: map-get($colores, textoPrimario);
+                    background-color: $backulplantel;
+                    color: map-get($texto, textoPrimario);
                     text-align: center;
                     li{
                         h3{
@@ -55,157 +55,154 @@
                     }
                 }
             }
-        }
-    }
-}
-/*Jugadores*/
-.posicionamiento{
-    .carousel-caption{
-        ul{
-            padding-left: 0;
-            width: 37.5625rem;
-            margin-bottom: -2.5625rem;
-        }
-    }
-    .armani{
-        ul{
-            padding-left: 0;
-            width: 43.75rem;
-            margin-top: -3.75rem;
-        }
-    }
-    .musso{
-        ul{
-            padding-left: 0;
-            width: 44.5625rem;
-            margin-top: -5.5625rem;
-            padding-bottom: 5px;
-        }
-    }
-    .montiel{
-        ul{
-            padding-left: 0;
-            width: 43.75rem;
-            padding-bottom: .4375rem;
-            margin-top: -25rem;
-        }
-    }
-    .cuti{
-        ul{
-            padding-left: 0;
-            width: 43.875rem;
-            margin-top: 6.375rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .ota{
-        ul{
-            padding-left: 0;
-            width: 43.875rem;
-            margin-top: 1.5625rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .licha{
-        ul{
-            padding-left: 0;
-            width: 43.75rem;
-            margin-top: -1.6875rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .taglia{
-        ul{
-            padding-left: 0;
-            width: 43.875rem;
-            margin-top: 6.4375rem;
-        }
-    }
-    .acuna{
-        ul{
-            padding-left: 0;
-            width: 37.1875rem;
-            margin-top: -5.75rem;
-            padding-bottom: .9375rem;
-        }
-    }
-    .maca{
-        ul{
-            padding-left: 0;
-            width: 43.75rem;
-            margin-top: 3.75rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .paredes{
-        ul{
-            padding-left: 0;
-            width: 43.875rem;
-            margin-top: 6.25rem;
-            padding-bottom: .3125rem;
-        }
-    }
-    .gio{
-        ul{
-            padding-left: 0;
-            width: 43.75rem;
-            padding-bottom: .3125rem;
-        }
-    }
-    .depaul{
-        ul{
-            padding-left: 0;
-            width: 43.75rem;
-            margin-top: 1.875rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .leomessi{
-        ul{
-            padding-left: 0;
-            width: 43.75rem;
-            margin-top: -5.8125rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .julian{
-        ul{
-            padding-left: 0;
-            width: 43.875rem;
-            margin-top: 5.625rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .dybala{
-        ul{
-            padding-left: 0;
-            width: 43.75rem;
-            margin-top: 73px;
-            padding-bottom: .625rem;
-        }
-    }
-    .scalo{
-        ul{
-            padding-left: 0;
-            width: 44.5rem;
-            margin-top: -5.75rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .samu{
-        ul{
-            padding-left: 0;
-            width: 43.8125rem;
-            margin-top: -5.8125rem;
-            padding-bottom: .625rem;
-        }
-    }
-    .ayala{
-        ul{
-            padding-left: 0;
-            width: 44.5625rem;
-            margin-top: -5.8125rem;
-            padding-bottom: .625rem;
+            .carousel-caption{
+                ul{
+                    padding-left: 0;
+                    width: 37.5625rem;
+                    margin-bottom: -2.5625rem;
+                }
+            }
+            .armani{
+                ul{
+                    padding-left: 0;
+                    width: 43.75rem;
+                    margin-top: -3.75rem;
+                }
+            }
+            .musso{
+                ul{
+                    padding-left: 0;
+                    width: 44.5625rem;
+                    margin-top: -5.5625rem;
+                    padding-bottom: 5px;
+                }
+            }
+            .montiel{
+                ul{
+                    padding-left: 0;
+                    width: 43.75rem;
+                    padding-bottom: .4375rem;
+                    margin-top: -25rem;
+                }
+            }
+            .cuti{
+                ul{
+                    padding-left: 0;
+                    width: 43.875rem;
+                    margin-top: 6.375rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .ota{
+                ul{
+                    padding-left: 0;
+                    width: 43.875rem;
+                    margin-top: 1.5625rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .licha{
+                ul{
+                    padding-left: 0;
+                    width: 43.75rem;
+                    margin-top: -1.6875rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .taglia{
+                ul{
+                    padding-left: 0;
+                    width: 43.875rem;
+                    margin-top: 6.4375rem;
+                }
+            }
+            .acuna{
+                ul{
+                    padding-left: 0;
+                    width: 37.1875rem;
+                    margin-top: -5.75rem;
+                    padding-bottom: .9375rem;
+                }
+            }
+            .maca{
+                ul{
+                    padding-left: 0;
+                    width: 43.75rem;
+                    margin-top: 3.75rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .paredes{
+                ul{
+                    padding-left: 0;
+                    width: 43.875rem;
+                    margin-top: 6.25rem;
+                    padding-bottom: .3125rem;
+                }
+            }
+            .gio{
+                ul{
+                    padding-left: 0;
+                    width: 43.75rem;
+                    padding-bottom: .3125rem;
+                }
+            }
+            .depaul{
+                ul{
+                    padding-left: 0;
+                    width: 43.75rem;
+                    margin-top: 1.875rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .leomessi{
+                ul{
+                    padding-left: 0;
+                    width: 43.75rem;
+                    margin-top: -5.8125rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .julian{
+                ul{
+                    padding-left: 0;
+                    width: 43.875rem;
+                    margin-top: 5.625rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .dybala{
+                ul{
+                    padding-left: 0;
+                    width: 43.75rem;
+                    margin-top: 73px;
+                    padding-bottom: .625rem;
+                }
+            }
+            .scalo{
+                ul{
+                    padding-left: 0;
+                    width: 44.5rem;
+                    margin-top: -5.75rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .samu{
+                ul{
+                    padding-left: 0;
+                    width: 43.8125rem;
+                    margin-top: -5.8125rem;
+                    padding-bottom: .625rem;
+                }
+            }
+            .ayala{
+                ul{
+                    padding-left: 0;
+                    width: 44.5625rem;
+                    margin-top: -5.8125rem;
+                    padding-bottom: .625rem;
+                }
+            }
         }
     }
 }

@@ -1,14 +1,14 @@
 .clasRiv{
     @include flex(column, center, center, none);
     display: flex;
-    color: map-get($colores, textoPrimario);
+    color: map-get($texto, textoPrimario);
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     .subClas{
         h2{
-            color: map-get($colores, textoPrimario);
+            color: map-get($texto, textoPrimario);
             font-size: 30px;
             text-align: center;
             padding-bottom: 4.375rem;
@@ -24,7 +24,7 @@
     .imgClas{
         width: 58%;
         height: auto;
-        box-shadow: 4px 4px 5px map-get($colores, textoSecundario);
+        box-shadow: 4px 4px 5px map-get($fondos, shadowimg);
         margin-bottom: 1.875rem;
     }
     .imgArgal{
@@ -34,11 +34,11 @@
     .pargBr{
         width: 70%;
         height: 12.5rem;
-        background-color: map-get($colores, colorSecundario);
+        background-color: map-get($fondos, colorPrimario);
         font-size: 20px;
         margin-bottom: 2.5rem;
         padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-        box-shadow: 2px 2px 2px $sombra;
+        box-shadow: 2px 2px 2px map-get($fondos, sombra);
         overflow: auto;
     }
     .pargUru{
@@ -64,13 +64,13 @@
     }    
 }
 .rivTitle{
-    color: map-get($colores, textoPrimario);
+    color: map-get($texto, textoPrimario);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 30px;
     text-align: center;
-    background-color: #002021;
+    background-color: map-get($fondos, colorAlternative);
     padding: 1.25rem;
     margin: .625rem 0 2.5rem 0;
 }

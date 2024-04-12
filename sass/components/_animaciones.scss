@@ -4,15 +4,15 @@
     }
     25%{
         transform: scale(1);
-        filter: drop-shadow(0 0 2.5rem rgba(172, 159, 57, 0.521));
+        filter: drop-shadow(0 0 2.5rem $brillo25);
     }
     50%{
         transform: scale(1.1);
-        filter: drop-shadow(0 0 2.5rem rgba(172, 159, 57, 0.616));
+        filter: drop-shadow(0 0 2.5rem $brillo50);
     }
     75%{
         transform: scale(1);
-        filter: drop-shadow(0 0 3.125rem rgba(172, 159, 57, 0.856));
+        filter: drop-shadow(0 0 3.125rem $brillo75);
     }
     100%{
         transform: scale(0.9);

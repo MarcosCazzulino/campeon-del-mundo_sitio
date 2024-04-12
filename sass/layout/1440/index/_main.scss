@@ -18,7 +18,7 @@
         font-size: 25px;
         font-style: italic;
         text-align: center;
-        color: map-get($colores, textoPrimario);
+        color: map-get($texto, textoPrimario);
         font-family: "Nunito", sans-serif;
         font-optical-sizing: auto;
         font-weight: 200;
@@ -35,13 +35,13 @@ section{
     .tituloIndex{
         @include flex(column, center, center, none);
         display: flex;
-        background-color: map-get($colores, colorSecundario);
+        background-color: map-get($fondos, colorPrimario);
         width: 100%;
         height: 140px;
         margin-bottom: 70px;
         font-weight: 600;
         & span{
-            color: map-get($colores, textoSecundario);
+            color: map-get($texto, textoSecundario);
         }
         .tit{
             width: 100%;
@@ -51,7 +51,7 @@ section{
     }
     .historicos{
         h2{
-            color: map-get($colores, textoPrimario);
+            color: map-get($texto, textoPrimario);
             font-size: 30px;
             text-align: center;
             padding-bottom: 4.375rem;
@@ -70,7 +70,7 @@ section{
         justify-items: center;
         margin-bottom: 5rem;
         .nombres{
-            color: map-get($colores, textoPrimario);
+            color: map-get($texto, textoPrimario);
             font-family: "Poppins", sans-serif;
             font-weight: 500;
             font-style: normal;
@@ -82,7 +82,7 @@ section{
             grid-row: 2/3;
             @include flex(column, center, center, .9375rem);
             display: flex;
-            color: map-get($colores, textoPrimario);
+            color: map-get($texto, textoPrimario);
             width: 13.125rem;
             height: 18.75rem;
             margin-left: 1.875rem;
@@ -144,7 +144,7 @@ section{
     width: 100%;
     padding-bottom: 4.6875rem;
     h2{
-        color: map-get($colores, textoPrimario);
+        color: map-get($texto, textoPrimario);
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-style: normal;

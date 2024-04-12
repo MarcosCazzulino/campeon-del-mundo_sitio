@@ -17,7 +17,7 @@
                 width: 45%;
                 height: auto;
                 &:active{
-                    background-color: map-get($colores, colorTerciario);
+                    background-color: map-get($form, colorActive);
                     transition: all .5s;
                 }
             }
@@ -25,7 +25,7 @@
                 width: 45%;
                 height: auto;
                 &:active{
-                    background-color: map-get($colores, colorTerciario);
+                    background-color: map-get($form, colorActive);
                     transition: all .5s;
                 }
             }
@@ -33,7 +33,7 @@
                 width: 45%;
                 height: auto;
                 &:active{
-                    background-color: map-get($colores, colorTerciario);
+                    background-color: map-get($form, colorActive);
                     transition: all .5s;
                 }
             }

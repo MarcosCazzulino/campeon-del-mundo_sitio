@@ -5,6 +5,15 @@
   padding: 0;
   box-sizing: border-box; }
 
+h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.1em; }
+
 a {
   text-decoration: none; }
 
@@ -143,15 +152,6 @@ body {
     height: 4.375rem;
     margin-top: 1.25rem;
     padding: 0; }
-
-h1 {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1.1em; }
 
 /*Layout*/
 /*index*/
@@ -598,8 +598,7 @@ section .palmaresDerecha {
         body .header .navBar .ul-links li .link {
           color: white; }
           body .header .navBar .ul-links li .link:active {
-            color: #00F4FF;
-            text-decoration: underline; }
+            color: #00F4FF; }
       body .header .navBar .menu-hamburguesa:checked + .ul-links {
         height: calc(100vh - 3.125rem); }
   body main section .tituloPages, body main section .titContact {
@@ -828,14 +827,14 @@ section .palmaresDerecha {
 
 @media (max-width: 320px) {
   body .header .navBar .burger {
-    margin-right: -10px; }
+    margin-right: -0.625rem; }
   body .header .navBar .ul-links {
     background-image: url(../assets/img/a.png); }
   .indexLogo {
     margin-top: -1.25rem; }
     .indexLogo img {
       margin: 0;
-      width: 120px;
+      width: 7.5rem;
       height: auto; }
     .indexLogo p, .indexLogo h1 span::selection, h1 .indexLogo span::selection, .indexLogo h1::selection, .indexLogo h2::selection, .indexLogo .clasRiv .subClas h3::selection, .clasRiv .subClas .indexLogo h3::selection, .indexLogo h3::selection, .indexLogo .tituloColor::selection, .indexLogo .refran::selection, .indexLogo a::selection {
       width: 11.4375rem; }
@@ -907,117 +906,97 @@ section .palmaresDerecha {
           font-optical-sizing: auto;
           font-weight: 400;
           font-style: normal; }
-
-/*Jugadores*/
-.posicionamiento .carousel-caption ul {
-  padding-left: 0;
-  width: 37.5625rem;
-  margin-bottom: -2.5625rem; }
-
-.posicionamiento .armani ul {
-  padding-left: 0;
-  width: 43.75rem;
-  margin-top: -3.75rem; }
-
-.posicionamiento .musso ul {
-  padding-left: 0;
-  width: 44.5625rem;
-  margin-top: -5.5625rem;
-  padding-bottom: 5px; }
-
-.posicionamiento .montiel ul {
-  padding-left: 0;
-  width: 43.75rem;
-  padding-bottom: .4375rem;
-  margin-top: -25rem; }
-
-.posicionamiento .cuti ul {
-  padding-left: 0;
-  width: 43.875rem;
-  margin-top: 6.375rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .ota ul {
-  padding-left: 0;
-  width: 43.875rem;
-  margin-top: 1.5625rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .licha ul {
-  padding-left: 0;
-  width: 43.75rem;
-  margin-top: -1.6875rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .taglia ul {
-  padding-left: 0;
-  width: 43.875rem;
-  margin-top: 6.4375rem; }
-
-.posicionamiento .acuna ul {
-  padding-left: 0;
-  width: 37.1875rem;
-  margin-top: -5.75rem;
-  padding-bottom: .9375rem; }
-
-.posicionamiento .maca ul {
-  padding-left: 0;
-  width: 43.75rem;
-  margin-top: 3.75rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .paredes ul {
-  padding-left: 0;
-  width: 43.875rem;
-  margin-top: 6.25rem;
-  padding-bottom: .3125rem; }
-
-.posicionamiento .gio ul {
-  padding-left: 0;
-  width: 43.75rem;
-  padding-bottom: .3125rem; }
-
-.posicionamiento .depaul ul {
-  padding-left: 0;
-  width: 43.75rem;
-  margin-top: 1.875rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .leomessi ul {
-  padding-left: 0;
-  width: 43.75rem;
-  margin-top: -5.8125rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .julian ul {
-  padding-left: 0;
-  width: 43.875rem;
-  margin-top: 5.625rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .dybala ul {
-  padding-left: 0;
-  width: 43.75rem;
-  margin-top: 73px;
-  padding-bottom: .625rem; }
-
-.posicionamiento .scalo ul {
-  padding-left: 0;
-  width: 44.5rem;
-  margin-top: -5.75rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .samu ul {
-  padding-left: 0;
-  width: 43.8125rem;
-  margin-top: -5.8125rem;
-  padding-bottom: .625rem; }
-
-.posicionamiento .ayala ul {
-  padding-left: 0;
-  width: 44.5625rem;
-  margin-top: -5.8125rem;
-  padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .carousel-caption ul {
+        padding-left: 0;
+        width: 37.5625rem;
+        margin-bottom: -2.5625rem; }
+      .carousel-inner .carousel-item .posicionamiento .armani ul {
+        padding-left: 0;
+        width: 43.75rem;
+        margin-top: -3.75rem; }
+      .carousel-inner .carousel-item .posicionamiento .musso ul {
+        padding-left: 0;
+        width: 44.5625rem;
+        margin-top: -5.5625rem;
+        padding-bottom: 5px; }
+      .carousel-inner .carousel-item .posicionamiento .montiel ul {
+        padding-left: 0;
+        width: 43.75rem;
+        padding-bottom: .4375rem;
+        margin-top: -25rem; }
+      .carousel-inner .carousel-item .posicionamiento .cuti ul {
+        padding-left: 0;
+        width: 43.875rem;
+        margin-top: 6.375rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .ota ul {
+        padding-left: 0;
+        width: 43.875rem;
+        margin-top: 1.5625rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .licha ul {
+        padding-left: 0;
+        width: 43.75rem;
+        margin-top: -1.6875rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .taglia ul {
+        padding-left: 0;
+        width: 43.875rem;
+        margin-top: 6.4375rem; }
+      .carousel-inner .carousel-item .posicionamiento .acuna ul {
+        padding-left: 0;
+        width: 37.1875rem;
+        margin-top: -5.75rem;
+        padding-bottom: .9375rem; }
+      .carousel-inner .carousel-item .posicionamiento .maca ul {
+        padding-left: 0;
+        width: 43.75rem;
+        margin-top: 3.75rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .paredes ul {
+        padding-left: 0;
+        width: 43.875rem;
+        margin-top: 6.25rem;
+        padding-bottom: .3125rem; }
+      .carousel-inner .carousel-item .posicionamiento .gio ul {
+        padding-left: 0;
+        width: 43.75rem;
+        padding-bottom: .3125rem; }
+      .carousel-inner .carousel-item .posicionamiento .depaul ul {
+        padding-left: 0;
+        width: 43.75rem;
+        margin-top: 1.875rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .leomessi ul {
+        padding-left: 0;
+        width: 43.75rem;
+        margin-top: -5.8125rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .julian ul {
+        padding-left: 0;
+        width: 43.875rem;
+        margin-top: 5.625rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .dybala ul {
+        padding-left: 0;
+        width: 43.75rem;
+        margin-top: 73px;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .scalo ul {
+        padding-left: 0;
+        width: 44.5rem;
+        margin-top: -5.75rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .samu ul {
+        padding-left: 0;
+        width: 43.8125rem;
+        margin-top: -5.8125rem;
+        padding-bottom: .625rem; }
+      .carousel-inner .carousel-item .posicionamiento .ayala ul {
+        padding-left: 0;
+        width: 44.5625rem;
+        margin-top: -5.8125rem;
+        padding-bottom: .625rem; }
 
 @keyframes scale {
   0% {

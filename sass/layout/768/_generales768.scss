@@ -34,10 +34,9 @@ body{
                 transition: all .3s;
                 li{
                     .link{
-                        color: map-get($colores, textoPrimario);
+                        color: map-get($texto, textoPrimario);
                         &:active{
-                            color: map-get($colores,  textoSecundario);
-                            text-decoration: underline;
+                            color: map-get($texto,  textoSecundario);
                         }
                     }
                 }

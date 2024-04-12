@@ -3,13 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    color: map-get($texto, textoPrimario);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1em;
+}
 a{
     text-decoration: none;
 }
 /*Pseudoclases y elementos*/
 p::selection{
-    background-color: map-get($colores, colorTerciario);
-    color: map-get($colores, textoPrimario);
+    background-color: map-get($fondos, selectionfond);
+    color: map-get($texto, selection);
 }
 h1 span::selection{
     @extend p;
@@ -46,7 +55,7 @@ body{
         top: 0;
         z-index: 3;
         height: 65px;
-        background-color: map-get($colores, colorSecundario);
+        background-color: map-get($fondos, colorPrimario);
         nav{
             @include flex(row,center,center,none);
             display: flex;
@@ -83,12 +92,12 @@ body{
                 padding: 0;
                 li{
                     .marcada{
-                        color: map-get($colores, textoSecundario);
+                        color: map-get($texto, textoSecundario);
                     }
                     .link{
-                        color: map-get($colores, navText);
+                        color: map-get($texto, navText);
                         &:hover{
-                            color: map-get($colores, textoSecundario);
+                            color: map-get($texto, textoSecundario);
                             transition: all .5s;
                         }
                     }
@@ -103,11 +112,11 @@ body{
                 display: flex;
                 width: 100%;
                 height: 8.75rem;
-                background-color: map-get($colores, colorSecundario);
+                background-color: map-get($fondos, colorPrimario);
                 padding: .625rem 0;
                 margin: 4.375rem 0;
                 & span{
-                    color: map-get($colores, textoSecundario);
+                    color: map-get($texto, textoSecundario);
                 }
                 .titPag{
                     width: 100%;
@@ -121,7 +130,7 @@ body{
         }
     }
     footer{
-        background-color: map-get($colores, colorSecundario);
+        background-color: map-get($fondos, colorPrimario);
         @include flex(column, center, center, none);
         display: flex;
         height: 7.5rem;
@@ -146,7 +155,7 @@ body{
                     font-size: 13px;
                     padding-right: 1.25rem;
                     text-align: right;
-                    color: map-get($colores, textoPrimario);
+                    color: map-get($texto, textoPrimario);
                     font-family: "Nunito", sans-serif;
                     font-optical-sizing: auto;
                     font-weight: 500;
@@ -161,14 +170,5 @@ body{
             margin-top: 1.25rem;
             padding: 0;
     }
-}
-h1{
-    color: map-get($colores, textoPrimario);
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.1em;
 }
 

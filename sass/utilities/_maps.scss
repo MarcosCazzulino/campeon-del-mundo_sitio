@@ -1,7 +1,19 @@
-$colores:(
-    colorSecundario: #1A1A1A,
-    colorTerciario: rgb(172, 159, 57),
+$texto:(
     textoPrimario: white,
     textoSecundario: #00F4FF,
-    navText: rgb(163, 161, 161)
+    navText: rgb(163, 161, 161),
+    selection: white,
+    placeholder: black
+);
+$fondos:(
+    colorPrimario: #1A1A1A,
+    colorAlternative: #002021,
+    selectionfond: rgb(172, 159, 57),
+    sombra: white,
+    shadowimg: #00F4FF
+);
+$form:(
+    backgroundcolor: #2c2a2a,
+    colorHover: rgb(172, 159, 57),
+    colorActive: rgb(172, 159, 57),
 )
