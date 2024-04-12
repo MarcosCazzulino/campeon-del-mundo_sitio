@@ -3,7 +3,7 @@
 Hola, mundo. Te presento mi página, **Campeón del Mundo**. Este proyecto tiene un elevado valor personal por lo que representó en mi vida haber visto a mi selección ganar el mundial de Qatar 2022. A partir de ese hecho, decidí hacer mi proyecto sobre dicho tema, un poco por gusto, otro poco por homenajear a nuestros campeones del mundo.
 
 ## Campeón del Mundo
-Esta página fue hecha sin fines de lucro ni comerciales. Meramente con el propósito de mostrar un poco de la historia y presente futbolístico de mi país.
+Esta página fue hecha sin fines de lucro ni comerciales, meramente con el propósito de mostrar un poco de la historia y presente futbolístico de mi país.
 
 El nombre es por el año en que se inició, 2024, año en el cual Argentina es la vigente campeona del mundo.
 
@@ -11,7 +11,8 @@ Mientras hacía el sketch, me imaginaba qué quería que vieran las personas al 
 
 Para esta sitio web, fui implementando distintas técnicas, a medida que avanzaba en el curso de Coderhouse. Empezando por box modeling, ya después posicionando los elementos con Flexbox y Grids, utilizando formularios, links, clases, CSS, llegando hasta las pseudoclases y pseudoelementos, las medidas absolutas y relativas, los media queries, y finalizando con la implementación de un menú hamburguesa en mi barra de navegación para dispositivos de 768px hacia abajo. 
 Para este sitio web no se implementó JavaScript, pero sí utilcé Bootstrap en la página Plantel, para poder mostrar de una manera más dinámica a los jugadores que conforman el equipo habitual de la Selección Argentina.
-A medida que trabajaba, fui creando ramas secundarias en Git, más que nada para los cambios grandes que pudieran arruinar lo que tenía maquetado hasta el momento. Una vez hecho el merge de la main con las ramas secundarias, finalmente di push al proyecto, subiendolo a mi repositorio de GitHub.
+A medida que trabajaba, fui creando ramas secundarias en Git, más que nada para los cambios grandes que pudieran arruinar lo que tenía maquetado hasta el momento. Al finalizar con estos (mediaqueries, modificación de mi nav, etc.), hice el merge de la rama main con la rama secundaria.
+Una vez hecho esto, empecé a pasar todo mi código CSS a SASS, para luego finalizar agregando animaciones y transiciones en distintos elementos de mi sitio web (algunas imágenes, la nav con el menú hamburguesa, entre otros) y trabajando lo que sería el SEO de la página, con la implementación de algunas etiquetas de meta información, retocando lo que sería el Opengraph, cambiando los title de mis HTML y poniendo mi ícono.
 
 Copyright Marcos Cazzulino.
 
