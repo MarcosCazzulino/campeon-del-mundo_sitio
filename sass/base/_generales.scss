@@ -34,8 +34,13 @@ a::selection{
 }
 /*Body*/
 body{
-    width: 100%;
-    background-color: $backgroundpage;
+    background-image: url(.././assets/img/fondoblack.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     .header{
         position: sticky;
         top: 0;
@@ -116,7 +121,7 @@ body{
         }
     }
     footer{
-        background-color: $bgsecundario;
+        background-color: map-get($colores, colorSecundario);
         @include flex(column, center, center, none);
         display: flex;
         height: 7.5rem;

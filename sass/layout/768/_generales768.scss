@@ -64,6 +64,7 @@ body{
         height: auto;
         div{
             @include flex(column, none, none, none);
+            padding-bottom: 6px
         }
         .redes{
             @include flex(none, none, none, .625rem);
@@ -78,7 +79,6 @@ body{
         .derechosAutor{
             @include flex(none, center, center, none);
             margin-right: -1rem;
-            padding-bottom: .625rem;
             p{
                 text-align: center;
                 font-size: 12px;

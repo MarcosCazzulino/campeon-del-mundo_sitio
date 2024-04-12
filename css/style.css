@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Utilities*/
 /*base*/
 * {
@@ -16,8 +15,13 @@ p::selection, h1 span::selection, h1::selection, h2::selection, .clasRiv .subCla
 
 /*Body*/
 body {
-  width: 100%;
-  background-color: black; }
+  background-image: url(.././assets/img/fondoblack.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px); }
   body .header {
     position: sticky;
     top: 0;
@@ -89,7 +93,7 @@ body {
   body main section .titContact {
     height: 6.25rem; }
   body footer {
-    background-color: #002021;
+    background-color: #1A1A1A;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,12 +164,16 @@ h1 {
   gap: none;
   display: flex;
   padding-bottom: 6.25rem;
-  padding-top: 30px; }
+  padding-top: 10px; }
   .indexLogo img {
     padding-bottom: 3.75rem;
     padding-top: 3.75rem;
     width: 20%;
-    height: auto; }
+    height: auto;
+    animation-name: scale;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3800ms; }
   .indexLogo p, .indexLogo h1 span::selection, h1 .indexLogo span::selection, .indexLogo h1::selection, .indexLogo h2::selection, .indexLogo .clasRiv .subClas h3::selection, .clasRiv .subClas .indexLogo h3::selection, .indexLogo h3::selection, .indexLogo .tituloColor::selection, .indexLogo .refran::selection, .indexLogo a::selection {
     font-size: 25px;
     font-style: italic;
@@ -241,7 +249,28 @@ section .jugHist {
     section .jugHist .maradona img, section .jugHist .messi img, section .jugHist .diStefano img {
       width: 100%;
       height: 100%;
-      border: 2px solid white; }
+      border: 2px solid white;
+      cursor: pointer;
+      transition: filter 1s; }
+    section .jugHist .maradona p, section .jugHist .messi p, section .jugHist .diStefano p, section .jugHist .maradona h1 span::selection, h1 section .jugHist .maradona span::selection, section .jugHist .messi h1 span::selection, h1 section .jugHist .messi span::selection, section .jugHist .diStefano h1 span::selection, h1 section .jugHist .diStefano span::selection, section .jugHist .maradona h1::selection, section .jugHist .messi h1::selection, section .jugHist .diStefano h1::selection, section .jugHist .maradona h2::selection, section .jugHist .messi h2::selection, section .jugHist .diStefano h2::selection, section .jugHist .maradona h3::selection, section .jugHist .messi h3::selection, section .jugHist .diStefano h3::selection, section .jugHist .maradona .tituloColor::selection, section .jugHist .messi .tituloColor::selection, section .jugHist .diStefano .tituloColor::selection, section .jugHist .maradona .refran::selection, section .jugHist .messi .refran::selection, section .jugHist .diStefano .refran::selection, section .jugHist .maradona a::selection, section .jugHist .messi a::selection, section .jugHist .diStefano a::selection {
+      width: 12.5rem;
+      height: 16.5625rem;
+      margin-bottom: 2.8125rem;
+      padding: .625rem;
+      position: absolute;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      overflow: auto;
+      -webkit-animation: desaparicion 500ms linear both;
+      animation: desaparicion 500ms linear both; }
+    section .jugHist .maradona:hover p, section .jugHist .messi:hover p, section .jugHist .diStefano:hover p, section .jugHist .maradona:hover h1 span::selection, h1 section .jugHist .maradona:hover span::selection, section .jugHist .messi:hover h1 span::selection, h1 section .jugHist .messi:hover span::selection, section .jugHist .diStefano:hover h1 span::selection, h1 section .jugHist .diStefano:hover span::selection, section .jugHist .maradona:hover h1::selection, section .jugHist .messi:hover h1::selection, section .jugHist .diStefano:hover h1::selection, section .jugHist .maradona:hover h2::selection, section .jugHist .messi:hover h2::selection, section .jugHist .diStefano:hover h2::selection, section .jugHist .maradona:hover h3::selection, section .jugHist .messi:hover h3::selection, section .jugHist .diStefano:hover h3::selection, section .jugHist .maradona:hover .tituloColor::selection, section .jugHist .messi:hover .tituloColor::selection, section .jugHist .diStefano:hover .tituloColor::selection, section .jugHist .maradona:hover .refran::selection, section .jugHist .messi:hover .refran::selection, section .jugHist .diStefano:hover .refran::selection, section .jugHist .maradona:hover a::selection, section .jugHist .messi:hover a::selection, section .jugHist .diStefano:hover a::selection {
+      -webkit-animation: textaparicion 500ms linear both;
+      animation: textaparicion 500ms linear both; }
+    section .jugHist .maradona:hover img, section .jugHist .messi:hover img, section .jugHist .diStefano:hover img {
+      filter: brightness(25%);
+      transition: filter .5s; }
   section .jugHist .messi {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -249,6 +278,9 @@ section .jugHist {
     height: 30rem;
     margin-right: .4375rem;
     margin-left: 0; }
+    section .jugHist .messi p, section .jugHist .messi h1 span::selection, h1 section .jugHist .messi span::selection, section .jugHist .messi h1::selection, section .jugHist .messi h2::selection, section .jugHist .messi h3::selection, section .jugHist .messi .tituloColor::selection, section .jugHist .messi .refran::selection, section .jugHist .messi a::selection {
+      height: 24.375rem;
+      margin-bottom: 3.125rem; }
   section .jugHist .diStefano {
     grid-column: 3/4;
     grid-row: 2/3;
@@ -267,7 +299,8 @@ section .jugHist {
     font-style: normal;
     font-size: 35px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 15px; }
 
 .somosMontiel {
   color: white;
@@ -307,7 +340,7 @@ section .palmaresIzquierda, section .palmaresDerecha {
     background-color: rgba(0, 0, 0, 0.788);
     width: 2.5rem;
     height: 2.5rem;
-    padding-top: .125rem;
+    padding: 0 .125rem 0 .125rem;
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 100%;
     box-shadow: 3px 3px 4px white; }
@@ -330,8 +363,7 @@ section .palmaresIzquierda, section .palmaresDerecha {
     width: 37.5rem;
     overflow: auto;
     padding: 0 .9375rem; }
-    section .palmaresIzquierda div .textoMun:before, section .palmaresDerecha div .textoMun:before, section .palmaresIzquierda div .textoFin:before, section .palmaresDerecha div .textoFin:before, section .palmaresIzquierda div .textoPan:before, section .palmaresDerecha div .textoPan:before, section .palmaresDerecha div .textoCa:before, section .palmaresDerecha div .textoConf:before {
-      content: attr(data-desktoptext);
+    section .palmaresIzquierda div p, section .palmaresDerecha div p, section .palmaresIzquierda div h1 span::selection, h1 section .palmaresIzquierda div span::selection, section .palmaresDerecha div h1 span::selection, h1 section .palmaresDerecha div span::selection, section .palmaresIzquierda div h1::selection, section .palmaresDerecha div h1::selection, section .palmaresIzquierda div h2::selection, section .palmaresDerecha div h2::selection, section .palmaresIzquierda div .clasRiv .subClas h3::selection, .clasRiv .subClas section .palmaresIzquierda div h3::selection, section .palmaresDerecha div .clasRiv .subClas h3::selection, .clasRiv .subClas section .palmaresDerecha div h3::selection, section .palmaresIzquierda div h3::selection, section .palmaresDerecha div h3::selection, section .palmaresIzquierda div .tituloColor::selection, section .palmaresDerecha div .tituloColor::selection, section .palmaresIzquierda div .refran::selection, section .palmaresDerecha div .refran::selection, section .palmaresIzquierda div a::selection, section .palmaresDerecha div a::selection {
       font-size: 20px;
       width: 34.375rem;
       text-align: left; }
@@ -348,7 +380,7 @@ section .palmaresDerecha {
     padding: 1.25rem 3.125rem 1.25rem 5rem;
     z-index: 1;
     border-left: 2px solid black; }
-  section .palmaresDerecha .numCa, section .palmaresDerecha .numConf {
+  section .palmaresDerecha .numCa {
     margin: 9.0625rem -7.1875rem 0 5.625rem;
     width: 3.125rem;
     height: 3.125rem;
@@ -361,7 +393,6 @@ section .palmaresDerecha {
     margin: 6.875rem -8.4375rem 0 7.5rem;
     width: 2.5rem;
     height: 2.5rem;
-    padding-top: .125rem;
     z-index: 2; }
   section .palmaresDerecha div {
     height: 11.875rem;
@@ -585,7 +616,8 @@ section .palmaresDerecha {
       flex-direction: column;
       justify-content: none;
       align-items: none;
-      gap: none; }
+      gap: none;
+      padding-bottom: 6px; }
     body footer .redes {
       display: flex;
       flex-direction: none;
@@ -604,8 +636,7 @@ section .palmaresDerecha {
       justify-content: center;
       align-items: center;
       gap: none;
-      margin-right: -1rem;
-      padding-bottom: .625rem; }
+      margin-right: -1rem; }
       body footer .derechosAutor p, body footer .derechosAutor h1 span::selection, h1 body footer .derechosAutor span::selection, body footer .derechosAutor h1::selection, body footer .derechosAutor h2::selection, body footer .derechosAutor .clasRiv .subClas h3::selection, .clasRiv .subClas body footer .derechosAutor h3::selection, body footer .derechosAutor h3::selection, body footer .derechosAutor .tituloColor::selection, body footer .derechosAutor .refran::selection, body footer .derechosAutor a::selection {
         text-align: center;
         font-size: 12px; }
@@ -688,77 +719,58 @@ section .palmaresDerecha {
     section .palmaresIzquierda .munNum, section .palmaresDerecha .munNum, section .palmaresIzquierda .numFin, section .palmaresDerecha .numFin, section .palmaresIzquierda .numPan, section .palmaresDerecha .numPan, section .palmaresDerecha .numCa, section .palmaresDerecha .numConf {
       margin: 6.25rem 4.6875rem 0 -5rem;
       width: 2.1875rem;
-      height: 2.1875rem;
-      padding-top: 0; }
+      height: 2.1875rem; }
     section .palmaresIzquierda .imagenFinalissima, section .palmaresDerecha .imagenFinalissima {
       padding: 1.25rem 2.5rem 1.25rem 2.8125rem; }
     section .palmaresIzquierda .numFin, section .palmaresDerecha .numFin {
       margin: 5.625rem 4.5rem 0 -4.875rem;
       width: 2.1875rem;
-      height: 2.1875rem;
-      padding: 0; }
+      height: 2.1875rem; }
     section .palmaresIzquierda .imagenPan, section .palmaresDerecha .imagenPan {
       padding: 1.25rem 2.8125rem 1.25rem 3.125rem; }
     section .palmaresIzquierda .numPan, section .palmaresDerecha .numPan {
       margin: 5.625rem 4.25rem 0 -4.6875rem;
       width: 2.1875rem;
-      height: 2.1875rem;
-      padding-top: 0; }
+      height: 2.1875rem; }
     section .palmaresIzquierda div, section .palmaresDerecha div {
       display: flex;
       flex-direction: none;
       justify-content: flex-start;
       align-items: none;
       gap: none;
-      width: 6.25rem;
-      line-height: 2.5rem;
-      padding: 0; }
-      section .palmaresIzquierda div .textoMun:before, section .palmaresDerecha div .textoMun:before, section .palmaresIzquierda div .textoFin:before, section .palmaresDerecha div .textoFin:before, section .palmaresIzquierda div .textoPan:before, section .palmaresDerecha div .textoPan:before, section .palmaresDerecha div .textoCa:before, section .palmaresDerecha div .textoConf:before {
-        content: attr(data-tablettext); }
-      section .palmaresIzquierda div .textoFin:before, section .palmaresDerecha div .textoFin:before {
-        content: attr(data-tablettext); }
-      section .palmaresIzquierda div .textoPan:before, section .palmaresDerecha div .textoPan:before {
-        content: attr(data-tablettext); }
+      height: auto; }
+      section .palmaresIzquierda div p, section .palmaresDerecha div p, section .palmaresIzquierda div h1 span::selection, h1 section .palmaresIzquierda div span::selection, section .palmaresDerecha div h1 span::selection, h1 section .palmaresDerecha div span::selection, section .palmaresIzquierda div h1::selection, section .palmaresDerecha div h1::selection, section .palmaresIzquierda div h2::selection, section .palmaresDerecha div h2::selection, section .palmaresIzquierda div .clasRiv .subClas h3::selection, .clasRiv .subClas section .palmaresIzquierda div h3::selection, section .palmaresDerecha div .clasRiv .subClas h3::selection, .clasRiv .subClas section .palmaresDerecha div h3::selection, section .palmaresIzquierda div h3::selection, section .palmaresDerecha div h3::selection, section .palmaresIzquierda div .tituloColor::selection, section .palmaresDerecha div .tituloColor::selection, section .palmaresIzquierda div .refran::selection, section .palmaresDerecha div .refran::selection, section .palmaresIzquierda div a::selection, section .palmaresDerecha div a::selection {
+        height: 7.5rem; }
   section .palmaresDerecha {
     height: 9.375rem;
     background-image: linear-gradient(270deg, #ac9f39, black 90%); }
     section .palmaresDerecha .imagenConf {
       padding: 1.25rem 4.375rem 1.25rem 4.25rem; }
     section .palmaresDerecha .numConf {
-      margin: 5.625rem -5.625rem 0 4.0625rem;
+      margin: 5.625rem -4.875rem 0 4.0625rem;
       background-color: rgba(0, 0, 0, 0.788);
       width: 2.1875rem;
-      height: 2.1875rem;
-      padding-top: 0; }
+      height: 2.1875rem; }
     section .palmaresDerecha div {
       display: flex;
       flex-direction: none;
       justify-content: flex-end;
       align-items: none;
       gap: none;
-      width: 6.25rem;
-      height: 6.25rem;
-      line-height: 2.5rem;
+      height: auto;
       overflow-x: scroll; }
-      section .palmaresDerecha div .textoConf:before {
-        content: attr(data-tablettext); }
-  section .copam {
-    height: 13.75rem; }
-    section .copam .imagenCa, section .copam .palmaresDerecha .imagenConf, section .palmaresDerecha .copam .imagenConf {
+      section .palmaresDerecha div p, section .palmaresDerecha div h1 span::selection, h1 section .palmaresDerecha div span::selection, section .palmaresDerecha div h1::selection, section .palmaresDerecha div h2::selection, section .palmaresDerecha div .clasRiv .subClas h3::selection, .clasRiv .subClas section .palmaresDerecha div h3::selection, section .palmaresDerecha div h3::selection, section .palmaresDerecha div .tituloColor::selection, section .palmaresDerecha div .refran::selection, section .palmaresDerecha div a::selection {
+        height: 7.5rem; }
+    section .palmaresDerecha .imagenCa, section .palmaresDerecha .imagenConf {
       padding: 1.25rem 3.125rem 1.25rem 3.125rem; }
-    section .copam .numCa, section .copam .palmaresDerecha .numConf, section .palmaresDerecha .copam .numConf {
+    section .palmaresDerecha .numCa {
       font-size: 20px;
-      margin: 9.375rem -5rem 0 2.8125rem;
-      width: 2.5rem;
-      height: 2.5rem;
-      padding-top: .3125rem; }
-    section .copam .div {
-      height: 12.5rem;
-      width: 25rem;
-      padding: 0 15px; }
-      section .copam .div .textoCa:before {
-        content: attr(data-tablettext);
-        text-align: center; }
+      margin: 5rem -5rem 0 2.8125rem;
+      width: 2.8125rem;
+      height: 2.8125rem;
+      padding: .5rem .3125rem 0 .3125rem; }
+  .subPlantel {
+    font-size: 24px; }
   .clasRiv .subClas {
     display: flex;
     flex-direction: none;
@@ -775,6 +787,8 @@ section .palmaresDerecha {
       font-size: 18px;
       width: 80%;
       line-height: 1.2em; }
+  .clasRiv .pargBr, .clasRiv .pargUru, .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
+    font-size: 16px; }
   .contactPage .contact {
     width: 100%;
     height: auto; }
@@ -804,21 +818,9 @@ section .palmaresDerecha {
         background-color: #ac9f39;
         transition: all .5s; } }
 
-/* Estos media queries no son pedidos pero no lograba acomodar el texto, no aparecía completo dentro del contenedor
-y si utilizaba mucho padding top se empezaba a sobresalir. También intenté con z-index, intenté poner un overflow-x: scroll
-pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
 @media (max-width: 412px) {
-  .copam .div {
-    height: 200px;
-    padding-top: 0; }
-    .copam .div .textoCa:before {
-      padding: 0;
-      font-size: 1rem; } }
-
-@media (max-width: 352px) {
-  section .copam .div {
-    height: 11.25rem;
-    padding-top: 7.5rem; } }
+  section .palmaresIzquierda div p, section .palmaresDerecha div p, section .palmaresIzquierda div h1 span::selection, h1 section .palmaresIzquierda div span::selection, section .palmaresDerecha div h1 span::selection, h1 section .palmaresDerecha div span::selection, section .palmaresIzquierda div h1::selection, section .palmaresDerecha div h1::selection, section .palmaresIzquierda div h2::selection, section .palmaresDerecha div h2::selection, section .palmaresIzquierda div .clasRiv .subClas h3::selection, .clasRiv .subClas section .palmaresIzquierda div h3::selection, section .palmaresDerecha div .clasRiv .subClas h3::selection, .clasRiv .subClas section .palmaresDerecha div h3::selection, section .palmaresIzquierda div h3::selection, section .palmaresDerecha div h3::selection, section .palmaresIzquierda div .tituloColor::selection, section .palmaresDerecha div .tituloColor::selection, section .palmaresIzquierda div .refran::selection, section .palmaresDerecha div .refran::selection, section .palmaresIzquierda div a::selection, section .palmaresDerecha div a::selection {
+    font-size: 16px; } }
 
 @media (max-width: 320px) {
   body .header .navBar .burger {
@@ -841,16 +843,12 @@ pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
     background-image: linear-gradient(90deg, #ac9f39, black 103%); }
   section .palmaresDerecha {
     background-image: linear-gradient(270deg, #ac9f39, black 103%); }
-  .clasRiv .pargBr, .clasRiv .pargUru, .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
+  .subPlantel {
     font-size: 18px; }
-  .clasRiv .pargUru, .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
-    font-size: 18px; }
-  .clasRiv .pargIng, .clasRiv .pargAl, .clasRiv .pargHol {
-    font-size: 18px; }
-  .clasRiv .pargAl {
-    font-size: 18px; }
-  .clasRiv .pargHol {
-    font-size: 18px; }
+  h3 {
+    font-size: 20px; }
+  .rivTitle {
+    font-size: 20px; }
   .contactPage .contact p, .contactPage .contact h1 span::selection, h1 .contactPage .contact span::selection, .contactPage .contact h1::selection, .contactPage .contact h2::selection, .contactPage .contact h3::selection, .contactPage .contact .tituloColor::selection, .contactPage .contact .refran::selection, .contactPage .contact a::selection {
     text-align: justify; } }
 
@@ -920,7 +918,8 @@ pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
 .posicionamiento .musso ul {
   padding-left: 0;
   width: 44.5625rem;
-  margin-top: -5.5625rem; }
+  margin-top: -5.5625rem;
+  padding-bottom: 5px; }
 
 .posicionamiento .montiel ul {
   padding-left: 0;
@@ -1015,3 +1014,58 @@ pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
   width: 44.5625rem;
   margin-top: -5.8125rem;
   padding-bottom: .625rem; }
+
+@keyframes scale {
+  0% {
+    transform: scale(0.9); }
+  25% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2.5rem rgba(172, 159, 57, 0.521)); }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2.5rem rgba(172, 159, 57, 0.616)); }
+  75% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 3.125rem rgba(172, 159, 57, 0.856)); }
+  100% {
+    transform: scale(0.9); } }
+
+@-webkit-keyframes textaparicion {
+  0% {
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0.75rem);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0rem);
+    filter: blur(0rem);
+    opacity: 1; } }
+
+@keyframes textaparicion {
+  0% {
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0.75rem);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0rem);
+    filter: blur(0rem);
+    opacity: 1; } }
+
+@-webkit-keyframes desaparicion {
+  0% {
+    opacity: 1;
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0.75rem); }
+  100% {
+    opacity: 0;
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0rem); } }
+
+@keyframes desaparicion {
+  0% {
+    opacity: 1;
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0.75rem); }
+  100% {
+    opacity: 0;
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0rem); } }

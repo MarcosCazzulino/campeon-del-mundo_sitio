@@ -3,12 +3,16 @@
     @include flex(column, center, center, none);
     display: flex;
     padding-bottom: 6.25rem;
-    padding-top: 30px;
+    padding-top: 10px;
     img{
         padding-bottom: 3.75rem;
         padding-top: 3.75rem;
         width: 20%;
         height: auto;
+        animation-name: scale;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 3800ms;
     }
     p{
         font-size: 25px;
@@ -86,6 +90,30 @@ section{
                 width: 100%;
                 height: 100%;
                 border: 2px solid $bordeHistoricos;
+                cursor: pointer;
+                transition: filter 1s;
+            }
+            p{
+                width: 12.5rem;
+                height: 16.5625rem;
+                margin-bottom: 2.8125rem;
+                padding: .625rem;
+                position: absolute;
+                cursor: pointer;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                overflow: auto;
+                -webkit-animation: desaparicion 500ms linear both;
+                animation: desaparicion 500ms linear both;
+            }
+            &:hover p{
+                -webkit-animation: textaparicion 500ms linear both;
+                animation: textaparicion 500ms linear both;
+            }
+            &:hover img{
+                filter: brightness(25%);
+                transition: filter .5s
             }
         }
         .messi{
@@ -96,6 +124,10 @@ section{
             height: 30rem;
             margin-right: .4375rem;
             margin-left: 0;
+            p{
+                height: 24.375rem;
+                margin-bottom: 3.125rem;
+            }
         }
         .diStefano{
             @extend .maradona;
@@ -119,5 +151,6 @@ section{
         font-size: 35px;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 15px;
     }
 }

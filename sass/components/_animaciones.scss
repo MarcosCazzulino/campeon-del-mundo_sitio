@@ -1,0 +1,70 @@
+@keyframes scale {
+    0%{
+        transform: scale(0.9);
+    }
+    25%{
+        transform: scale(1);
+        filter: drop-shadow(0 0 2.5rem rgba(172, 159, 57, 0.521));
+    }
+    50%{
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 2.5rem rgba(172, 159, 57, 0.616));
+    }
+    75%{
+        transform: scale(1);
+        filter: drop-shadow(0 0 3.125rem rgba(172, 159, 57, 0.856));
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes textaparicion {
+    0% {
+        -webkit-filter: blur(.75rem);
+                filter: blur(.75rem);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0rem);
+                filter: blur(0rem);
+        opacity: 1;
+      }
+    }
+    @keyframes textaparicion {
+      0% {
+        -webkit-filter: blur(.75rem);
+                filter: blur(.75rem);
+                opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0rem);
+                filter: blur(0rem);
+        opacity: 1;
+      }
+    }
+
+@-webkit-keyframes desaparicion{
+    0%{
+        opacity: 1;
+        -webkit-filter: blur(.75rem);
+        filter: blur(.75rem);
+    }
+    100%{
+        opacity: 0;
+        -webkit-filter: blur(.75rem);
+        filter: blur(0rem);
+    }
+}
+@keyframes desaparicion{
+    0%{
+        opacity: 1;
+        -webkit-filter: blur(.75rem);
+        filter: blur(.75rem);
+    }
+    100%{
+        opacity: 0;
+        -webkit-filter: blur(.75rem);
+        filter: blur(0rem);
+    }
+}

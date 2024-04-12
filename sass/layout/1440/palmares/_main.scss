@@ -23,7 +23,7 @@ section{
             background-color: $fondoNum;
             width: 2.5rem;
             height: 2.5rem;
-            padding-top: .125rem;
+            padding: 0 .125rem 0 .125rem;
             border: 1px solid $bordenum;
             border-radius: 100%;
             box-shadow: 3px 3px 4px $sombra;
@@ -51,17 +51,10 @@ section{
             width: 37.5rem;
             overflow: auto;
             padding: 0 .9375rem;
-            .textoMun:before{
-                content: attr(data-desktoptext);
+            p{
                 font-size: 20px;
                 width: 34.375rem;
                 text-align: left;
-            }
-            .textoFin:before{
-                @extend .textoMun:before;
-            }
-            .textoPan:before{
-                @extend .textoMun:before;
             }
         }
     }
@@ -90,22 +83,15 @@ section{
             padding: 2.5rem 3.125rem 2.5rem 6.875rem;
         }
         .numConf{
-            @extend .numCa;
+            @extend .munNum;
             margin: 6.875rem -8.4375rem 0 7.5rem;
             width: 2.5rem;
             height: 2.5rem;
-            padding-top: .125rem;
             z-index: 2;
         }
         div{
             height: 11.875rem;
             width: 34.375rem;
-            .textoCa:before{
-                @extend .textoMun:before;
-            }
-            .textoConf:before{
-                @extend .textoMun:before;
-            }
         }
     }
 }

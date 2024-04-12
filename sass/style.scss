@@ -31,25 +31,22 @@
     @import "./layout/768/generales768";
     @import "./layout/768/index768";
     @import "./layout/768/palmares768";
+    @import "./layout/768/plantel768";
     @import "./layout/768/clasicos768";
     @import "./layout/768/contacto768";
 }
-/* Estos media queries no son pedidos pero no lograba acomodar el texto, no aparecía completo dentro del contenedor
-y si utilizaba mucho padding top se empezaba a sobresalir. También intenté con z-index, intenté poner un overflow-x: scroll
-pero tampoco funcionó. Probé todo lo que se me ocurrió para evitarlo. */
 @media (max-width: 412px){
     @import "./layout/412/palmares412";
 }
-@media (max-width: 352px){
-    @import "./layout/352/palmares352";
-}
 @media (max-width: 320px){
     @import "./layout/320/generales320";
-    @import "./layout/320/index.320";
+    @import "./layout/320/index320";
     @import "./layout/320/palmares320";
+    @import "./layout/320/plantel320";
     @import "./layout/320/clasicos320";
-    @import "./layout/320/contacto.320";
+    @import "./layout/320/contacto320";
 }
 
 /*Components*/
 @import "./components/bootstrap";
+@import "./components/animaciones";
