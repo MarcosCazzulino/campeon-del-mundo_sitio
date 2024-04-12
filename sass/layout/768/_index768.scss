@@ -1,3 +1,4 @@
+
 .indexLogo{
     img{
         width: 7.5rem;
@@ -48,6 +49,12 @@ section{
             height: auto;
             text-align: center;
             order: 2;
+            p:not(:hover){
+                display: none;
+            }
+            &:hover img{
+                filter: none;
+            }
         }
         .messi{
             margin: 0;

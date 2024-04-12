@@ -691,6 +691,10 @@ section .palmaresDerecha {
       height: auto;
       text-align: center;
       order: 2; }
+      section .jugHist .maradona p:not(:hover), section .jugHist .messi p:not(:hover), section .jugHist .diStefano p:not(:hover), section .jugHist .maradona h1 span:not(:hover)::selection, h1 section .jugHist .maradona span:not(:hover)::selection, section .jugHist .messi h1 span:not(:hover)::selection, h1 section .jugHist .messi span:not(:hover)::selection, section .jugHist .diStefano h1 span:not(:hover)::selection, h1 section .jugHist .diStefano span:not(:hover)::selection, section .jugHist .maradona h1:not(:hover)::selection, section .jugHist .messi h1:not(:hover)::selection, section .jugHist .diStefano h1:not(:hover)::selection, section .jugHist .maradona h2:not(:hover)::selection, section .jugHist .messi h2:not(:hover)::selection, section .jugHist .diStefano h2:not(:hover)::selection, section .jugHist .maradona h3:not(:hover)::selection, section .jugHist .messi h3:not(:hover)::selection, section .jugHist .diStefano h3:not(:hover)::selection, section .jugHist .maradona .tituloColor:not(:hover)::selection, section .jugHist .messi .tituloColor:not(:hover)::selection, section .jugHist .diStefano .tituloColor:not(:hover)::selection, section .jugHist .maradona .refran:not(:hover)::selection, section .jugHist .messi .refran:not(:hover)::selection, section .jugHist .diStefano .refran:not(:hover)::selection, section .jugHist .maradona a:not(:hover)::selection, section .jugHist .messi a:not(:hover)::selection, section .jugHist .diStefano a:not(:hover)::selection {
+        display: none; }
+      section .jugHist .maradona:hover img, section .jugHist .messi:hover img, section .jugHist .diStefano:hover img {
+        filter: none; }
     section .jugHist .messi {
       margin: 0;
       width: 28%;
